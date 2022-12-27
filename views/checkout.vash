@@ -1,0 +1,384 @@
+
+@html.extend('layout', function(model) {
+@html.block('styles', function(model) {
+  <meta charset="UTF-8" dir="rtl" lang="ar" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no" />
+
+  <meta name="description"
+    content="نحن متجر بلو ستور متخصص بإكسسوارات الجوالات والسماعات والساعات وجميع مايخص الإلكترونيات منذ عام 2019 ومقر المتجر بجازان ونقاط البيع في السوق المحلي والإلكتروني بأيدي عاملة سعودية" />
+  <meta name="keywords"
+    content="نحن متجر بلو ستور متخصص بإكسسوارات الجوالات والسماعات والساعات وجميع مايخص الإلكترونيات منذ عام 2019 ومقر المتجر بجازان ونقاط البيع في السوق المحلي والإلكتروني بأيدي عاملة سعودية" />
+
+  <link rel="icon" type="image/png" href="../uploads/1667829295.png" />
+
+  <meta property="og:image" content="../uploads/1667829295.png" />
+ 
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/363ad84da6.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="../css/libraries.css" />
+  <link rel="stylesheet" href="../css/checkout.css" />
+
+   <style type="text/css">
+        .vue-tel-input {
+            border-radius: 3px;
+            display: flex;
+            border: 1px solid #bbb;
+            text-align: left;
+        }
+
+        .vue-tel-input.disabled .dropdown,
+        .vue-tel-input.disabled .selection,
+        .vue-tel-input.disabled input {
+            cursor: no-drop;
+        }
+
+        .vue-tel-input:focus-within {
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+                0 0 8px rgba(102, 175, 233, 0.6);
+            border-color: #66afe9;
+        }
+
+        .vti__dropdown {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            position: relative;
+            padding: 7px;
+            cursor: pointer;
+        }
+
+        .vti__dropdown.show {
+            max-height: 300px;
+            overflow: scroll;
+        }
+
+        .vti__dropdown.open {
+            background-color: #f3f3f3;
+        }
+
+        .vti__dropdown:hover {
+            background-color: #f3f3f3;
+        }
+
+        .vti__selection {
+            font-size: 0.8em;
+            display: flex;
+            align-items: center;
+        }
+
+        .vti__selection .vti__country-code {
+            color: #666;
+        }
+
+        .vti__flag {
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+
+        .vti__dropdown-list {
+            z-index: 1;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+            list-style: none;
+            max-height: 200px;
+            overflow-y: scroll;
+            position: absolute;
+            left: -1px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            width: 390px;
+        }
+
+        .vti__dropdown-list.below {
+            top: 33px;
+        }
+
+        .vti__dropdown-list.above {
+            top: auto;
+            bottom: 100%;
+        }
+
+        .vti__dropdown-arrow {
+            transform: scaleY(0.5);
+            display: inline-block;
+            color: #666;
+        }
+
+        .vti__dropdown-item {
+            cursor: pointer;
+            padding: 4px 15px;
+        }
+
+        .vti__dropdown-item.highlighted {
+            background-color: #f3f3f3;
+        }
+
+        .vti__dropdown-item.last-preferred {
+            border-bottom: 1px solid #cacaca;
+        }
+
+        .vti__dropdown-item .vti__flag {
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        .vti__input {
+            border: none;
+            border-radius: 0 2px 2px 0;
+            width: 100%;
+            outline: 0;
+            padding-left: 7px;
+        }
+    </style>
+})
+@html.block('content', function(model) {
+    <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N8R6L4R" height="0" width="0"
+      style="display: none; visibility: hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div id="app" class="container container--margined">
+    <div class="row">
+      <div id="payment_process" class="col-md-12 col-sm-12" style="display: block">
+        <main class="sections-wrapper">
+          <header data-v-0446810e class="store-info">
+            <div data-v-0446810e class="d-flex">
+              <div data-v-0446810e class="store-info__detail">
+                <h1 data-v-0446810e>مرحباً بك </h1>
+                <ul data-v-0446810e class="breadcrumb">
+                  <li data-v-0446810e class="breadcrumb-item">
+                    <a data-v-0446810e href="/" target="_blank" class>MTJR AZIZ</a>
+                  </li>
+                  <li data-v-0446810e class="breadcrumb-item">
+                    <a data-v-0446810e href="/" target="_blank" class>سلة المشتريات</a>
+                  </li>
+                  <li data-v-0446810e class="breadcrumb-item">إنهاء الطلب</li>
+                </ul>
+              </div>
+            </div>
+            
+          </header>
+          <div class="section section--payment">
+            <div data-v-ae8563fe class="row">
+              <div data-v-ae8563fe class="col-md-12">
+                <div data-v-ae8563fe id="shipping_step" class="payment-step">
+                  <div data-v-ae8563fe data-step="1" class="title title--step">
+                    <img data-v-ae8563fe src="../img/step-shipping.svg" />
+                    <h3 data-v-ae8563fe>الشحن والتوصيل</h3>
+                  </div>
+                  
+                </div>
+                <div data-v-ae8563fe id="shipping_method_fields">
+                  <span data-v-ae8563fe><span data-v-ae8563fe>
+                    <form id="orderRegister" class="form form--options-edit">
+                          <input type="hidden" name="price" value="@model.pro.newPrice" />
+                          <input type="hidden" name="note" value="@model.pro.name" />
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="shipping-address-redirect">
+                                <div id="addresses">
+                                  <div class="row">
+                                    <div class="col-md-12">
+                                      <div class="title title--small title--smaller">
+                                        <h2>عنوان التوصيل</h2>
+                                      </div>
+                                      
+                                      
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <span>
+                            <div id="shipping_fields_wrapper">
+                              <div>
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <span>
+                                      <fieldset class="form-group">
+                                        <label for="street_name">الاسم كاملاً</label>
+                                        <input type="text" id="street_name"  name="name"
+                                          placeholder="الاسم كاملاً" class="form-control" />
+                                        
+                                      </fieldset>
+                                    </span>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <span>
+                                            <fieldset class="form-group">
+                                                <label for="receiver_mobile">رقم الجوال</label>
+                                                <div data-v-48040520=""
+                                                    class="form-control tel-input-wrapper">
+                                                    <div data-v-48040520="" class="vue-tel-input">
+                                                        <div tabindex="0" class="vti__dropdown">
+                                                            <span class="vti__selection">
+                                                                <div class="vti__flag sa">
+                                                                    <img src="../img/2560px-Flag_of_Saudi_Arabia_%281938_to_1973%29.svg.png"
+                                                                        width="22" />
+                                                                </div>
+
+                                                                <span
+                                                                    class="vti__dropdown-arrow">▼</span>
+                                                            </span>
+                                                            <ul class="vti__dropdown-list below"
+                                                                style="display: none">
+                                                                <li
+                                                                    class="vti__dropdown-item preferred">
+                                                                    <div class="vti__flag sa"></div>
+                                                                    <strong>Saudi Arabia
+                                                                        (&#x202B;المملكة العربية
+                                                                        السعودية&#x202C;&lrm;)</strong>
+                                                                    <span> +966 </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <input type="tel" autocomplete="on"
+                                                            id="receiver_mobile" maxlength="25"
+                                                            name="phone" placeholder="+966 51 234 5678"
+                                                            tabindex="0" class="vti__input" />
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </span>
+
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <span>
+                                      <fieldset class="form-group">
+                                        <label for="street_name">المنطقة  </label>
+                                        <input type="text" id="street_name"  name="address"
+                                          placeholder=" المدينة " class="form-control" />
+                                        
+                                      </fieldset>
+                                    </span>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <span>
+                                      <fieldset class="form-group">
+                                        <label for="street_name">العنوان</label>
+                                        <input type="text" id="street_name"  name="address2"
+                                          placeholder="اسم الشارع" class="form-control" />
+                                        
+                                      </fieldset>
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            
+                          </span>
+
+                          <div class="ui form">
+                              <div class="field">
+                                <div class="ui default checkbox">
+                                  <input type="checkbox" id="confirm_credentials" name="confirm-credentials" />
+                                  <label for="confirm_credentials">
+                                    <p>
+                                      اقر باني راغب في استلام الطلب وموافق على سياسة الضمان
+                                      والاسترجاع والتوصيل
+                                    </p>
+                                    <p>
+                                      <a href="https://mtjrazez.com/pages/refund-exchange-policy" target="_blank">سياسة الضمان والاسترجاع</a>
+                                    </p>
+                                  </label>
+                                </div>
+                              </div>
+                          </div>
+                          <br>
+                          <br>
+                          <br>
+                          <div data-v-e5a4c4bc>
+                            <button data-v-e5a4c4bc id="order-submit" type="submit" name="subm"
+                              class="btn btn--primary btn--wide btn--round btn--submit btn--fixed wide">
+                              <span data-v-e5a4c4bc>اكمال الدفع</span>
+                            </button>
+                          </div>
+                      </form>
+                    </span>
+                  </span>
+                </div>
+                
+              </div>
+            </div>
+            <br>
+            <ul class="list list--brands">
+              <li>تسوق إلكتروني آمن 100%</li>
+              <li><img src="../img/secure-payment.svg" /></li>
+              <li><img src="../img/secure-payment-02.svg" /></li>
+              <li><img src="../img/secure-payment-03.svg" /></li>
+            </ul>
+            <div id="sms-alert-section2"></div>
+          </div>
+        </main>
+        
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="../js/jquery.validate.min.js"></script>
+  <script>
+      $("#orderRegister").validate({
+          rules: {
+              name: {
+                  required: true,
+              },
+              address: {
+                  required: true,
+              },
+              phone: {
+                  required: true,
+                  minlength: 7,
+              },
+              address1: {
+                  required: true,
+                  email: true,
+              },
+          },
+          messages: {
+              name: "الرجاء كتابة الاسم",
+              address: "الرجاء ادخال الاسم ",
+              phone: "الرجاء ادخال الرقم  ",
+              email: " الرجاء ادخال ايميل  صحيح ",
+          },
+          submitHandler: SubForm,
+      });
+      function SubForm() {
+          console.log("send start");
+          $.ajax({
+              url: "/userRegister",
+              type: "post",
+              data: $("#orderRegister").serializeArray(),
+              beforeSend: function () {
+                  $("#error").fadeOut();
+
+                  $("#order-submit").html(
+                      '<span class="glyphicon glyphicon-transfer"></span>  <span style="color:#fff">  جاري التسجيل </span>.'
+                  );
+              },
+              success: function () {
+                  setTimeout(() => {
+                      window.location.replace("/checkout-card");
+                  }, 3000);
+              },
+              error: function () {
+                  // alert("There was an error :(");
+              },
+          });
+          return false;
+      }
+  </script>
+
+  
+})
+})

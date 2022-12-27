@@ -1,0 +1,898 @@
+.bg {
+  opacity: 0;
+  transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+}
+
+.bg-loaded {
+  opacity: 1;
+}
+.woocommerce-product-gallery {
+  opacity: 1 !important;
+}
+.header-main {
+  height: 74px;
+}
+
+#logo img {
+  max-height: 74px;
+}
+
+#logo {
+  width: 147px;
+}
+
+#logo img {
+  padding: 5px 0;
+}
+
+.header-bottom {
+  min-height: 55px;
+}
+
+.header-top {
+  min-height: 30px;
+}
+
+.transparent .header-main {
+  height: 265px;
+}
+
+.transparent #logo img {
+  max-height: 265px;
+}
+
+.has-transparent + .page-title:first-of-type,
+.has-transparent + #main > .page-title,
+.has-transparent + #main > div > .page-title,
+.has-transparent + #main .page-header-wrapper:first-of-type .page-title {
+  padding-top: 265px;
+}
+
+.header.show-on-scroll,
+.stuck .header-main {
+  height: 70px !important;
+}
+
+.stuck #logo img {
+  max-height: 70px !important;
+}
+
+.search-form {
+  width: 58%;
+}
+
+.header-bg-color,
+.header-wrapper {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.header-bottom {
+  background-color: #f1f1f1;
+}
+
+.header-main .nav > li > a {
+  line-height: 16px;
+}
+
+@media (max-width: 549px) {
+  .header-main {
+    height: 70px;
+  }
+
+  #logo img {
+    max-height: 70px;
+  }
+}
+
+.main-menu-overlay {
+  background-color: #0a0a0a;
+}
+
+/* Color */
+.accordion-title.active,
+.has-icon-bg .icon .icon-inner,
+.logo a,
+.primary.is-underline,
+.primary.is-link,
+.badge-outline .badge-inner,
+.nav-outline > li.active > a,
+.nav-outline > li.active > a,
+.cart-icon strong,
+[data-color="primary"],
+.is-outline.primary {
+  color: #cda349;
+}
+
+/* Color !important */
+[data-text-color="primary"] {
+  color: #cda349 !important;
+}
+
+/* Background Color */
+[data-text-bg="primary"] {
+  background-color: #cda349;
+}
+
+/* Background */
+.scroll-to-bullets a,
+.featured-title,
+.label-new.menu-item > a:after,
+.nav-pagination > li > .current,
+.nav-pagination > li > span:hover,
+.nav-pagination > li > a:hover,
+.has-hover:hover .badge-outline .badge-inner,
+button[type="submit"],
+.button.wc-forward:not(.checkout):not(.checkout-button),
+.button.submit-button,
+.button.primary:not(.is-outline),
+.featured-table .title,
+.is-outline:hover,
+.has-icon:hover .icon-label,
+.nav-dropdown-bold .nav-column li > a:hover,
+.nav-dropdown.nav-dropdown-bold > li > a:hover,
+.nav-dropdown-bold.dark .nav-column li > a:hover,
+.nav-dropdown.nav-dropdown-bold.dark > li > a:hover,
+.is-outline:hover,
+.tagcloud a:hover,
+.grid-tools a,
+input[type="submit"]:not(.is-form),
+.box-badge:hover .box-text,
+input.button.alt,
+.nav-box > li > a:hover,
+.nav-box > li.active > a,
+.nav-pills > li.active > a,
+.current-dropdown .cart-icon strong,
+.cart-icon:hover strong,
+.nav-line-bottom > li > a:before,
+.nav-line-grow > li > a:before,
+.nav-line > li > a:before,
+.banner,
+.header-top,
+.slider-nav-circle .flickity-prev-next-button:hover svg,
+.slider-nav-circle .flickity-prev-next-button:hover .arrow,
+.primary.is-outline:hover,
+.button.primary:not(.is-outline),
+input[type="submit"].primary,
+input[type="submit"].primary,
+input[type="reset"].button,
+input[type="button"].primary,
+.badge-inner {
+  background-color: #cda349;
+}
+
+/* Border */
+.nav-vertical.nav-tabs > li.active > a,
+.scroll-to-bullets a.active,
+.nav-pagination > li > .current,
+.nav-pagination > li > span:hover,
+.nav-pagination > li > a:hover,
+.has-hover:hover .badge-outline .badge-inner,
+.accordion-title.active,
+.featured-table,
+.is-outline:hover,
+.tagcloud a:hover,
+blockquote,
+.has-border,
+.cart-icon strong:after,
+.cart-icon strong,
+.blockUI:before,
+.processing:before,
+.loading-spin,
+.slider-nav-circle .flickity-prev-next-button:hover svg,
+.slider-nav-circle .flickity-prev-next-button:hover .arrow,
+.primary.is-outline:hover {
+  border-color: #cda349;
+}
+
+.nav-tabs > li.active > a {
+  border-top-color: #cda349;
+}
+
+.widget_shopping_cart_content .blockUI.blockOverlay:before {
+  border-left-color: #cda349;
+}
+
+.woocommerce-checkout-review-order .blockUI.blockOverlay:before {
+  border-left-color: #cda349;
+}
+
+/* Fill */
+.slider .flickity-prev-next-button:hover svg,
+.slider .flickity-prev-next-button:hover .arrow {
+  fill: #cda349;
+}
+
+/* Background Color */
+[data-icon-label]:after,
+.secondary.is-underline:hover,
+.secondary.is-outline:hover,
+.icon-label,
+.button.secondary:not(.is-outline),
+.button.alt:not(.is-outline),
+.badge-inner.on-sale,
+.button.checkout,
+.single_add_to_cart_button,
+.current .breadcrumb-step {
+  background-color: #1c2143;
+}
+
+[data-text-bg="secondary"] {
+  background-color: #1c2143;
+}
+@media screen and (max-width: 549px) {
+  body {
+    font-size: 100%;
+  }
+}
+
+body {
+  font-family: "Almarai", sans-serif;
+}
+
+body {
+  font-weight: 0;
+}
+
+body {
+  color: #1c2143;
+}
+
+.nav > li > a {
+  font-family: "Almarai", sans-serif;
+}
+
+.mobile-sidebar-levels-2 .nav > li > ul > li > a {
+  font-family: "Almarai", sans-serif;
+}
+
+.nav > li > a {
+  font-weight: 700;
+}
+
+.mobile-sidebar-levels-2 .nav > li > ul > li > a {
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading-font,
+.off-canvas-center .nav-sidebar.nav-vertical > li > a {
+  font-family: "Almarai", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading-font,
+.banner h1,
+.banner h2 {
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading-font {
+  color: #232b2b;
+}
+
+.breadcrumbs {
+  text-transform: none;
+}
+
+button,
+.button {
+  text-transform: none;
+}
+
+.nav > li > a,
+.links > li > a {
+  text-transform: none;
+}
+
+.section-title span {
+  text-transform: none;
+}
+
+h3.widget-title,
+span.widget-title {
+  text-transform: none;
+}
+
+.alt-font {
+  font-family: "Almarai", sans-serif;
+}
+
+.alt-font {
+  font-weight: 0 !important;
+}
+
+.header:not(.transparent) .header-nav.nav > li > a {
+  color: #1c2143;
+}
+
+.header:not(.transparent) .header-nav.nav > li > a:hover,
+.header:not(.transparent) .header-nav.nav > li.active > a,
+.header:not(.transparent) .header-nav.nav > li.current > a,
+.header:not(.transparent) .header-nav.nav > li > a.active,
+.header:not(.transparent) .header-nav.nav > li > a.current {
+  color: #1c2143;
+}
+
+.header-nav.nav-line-bottom > li > a:before,
+.header-nav.nav-line-grow > li > a:before,
+.header-nav.nav-line > li > a:before,
+.header-nav.nav-box > li > a:hover,
+.header-nav.nav-box > li.active > a,
+.header-nav.nav-pills > li > a:hover,
+.header-nav.nav-pills > li.active > a {
+  color: #fff !important;
+  background-color: #1c2143;
+}
+
+a {
+  color: #232b2b;
+}
+
+a:hover {
+  color: #cda349;
+}
+
+.tagcloud a:hover {
+  border-color: #cda349;
+  background-color: #cda349;
+}
+
+.is-divider {
+  background-color: #d1d1d1;
+}
+
+@media screen and (min-width: 550px) {
+  .products .box-vertical .box-image {
+    min-width: 300px !important;
+    width: 300px !important;
+  }
+}
+
+.header-main .social-icons,
+.header-main .cart-icon strong,
+.header-main .menu-title,
+.header-main .header-button > .button.is-outline,
+.header-main .nav > li > a > i:not(.icon-angle-down) {
+  color: #232b2b !important;
+}
+
+.header-main .header-button > .button.is-outline,
+.header-main .cart-icon strong:after,
+.header-main .cart-icon strong {
+  border-color: #232b2b !important;
+}
+
+.header-main .header-button > .button:not(.is-outline) {
+  background-color: #232b2b !important;
+}
+
+.header-main .current-dropdown .cart-icon strong,
+.header-main .header-button > .button:hover,
+.header-main .header-button > .button:hover i,
+.header-main .header-button > .button:hover span {
+  color: #fff !important;
+}
+
+.header-main .menu-title:hover,
+.header-main .social-icons a:hover,
+.header-main .header-button > .button.is-outline:hover,
+.header-main .nav > li > a:hover > i:not(.icon-angle-down) {
+  color: #303030 !important;
+}
+
+.header-main .current-dropdown .cart-icon strong,
+.header-main .header-button > .button:hover {
+  background-color: #303030 !important;
+}
+
+.header-main .current-dropdown .cart-icon strong:after,
+.header-main .current-dropdown .cart-icon strong,
+.header-main .header-button > .button:hover {
+  border-color: #303030 !important;
+}
+
+.absolute-footer,
+html {
+  background-color: #1c2143;
+}
+
+.label-new.menu-item > a:after {
+  content: "New";
+}
+
+.label-hot.menu-item > a:after {
+  content: "Hot";
+}
+
+.label-sale.menu-item > a:after {
+  content: "Sale";
+}
+
+.label-popular.menu-item > a:after {
+  content: "Popular";
+}
+
+.html .social-icons {
+  color: #cda349;
+  font-size: 18px;
+  border: solid 1px;
+  border-radius: 7px;
+  margin: 0 auto;
+  margin: auto 0;
+  text-align: center;
+}
+
+ 
+.woocommerce-loop-product__title {
+  text-align: center;
+  font-size: 11px;
+}
+
+.product-cat {
+  text-align: center;
+}
+
+.product-small .price-wrapper {
+  text-align: center !important;
+}
+
+.product-small .price-wrapper .amount {
+  font-size: 16px;
+}
+
+.add-to-cart-button {
+  text-align: center;
+}
+
+ 
+
+.woocommerce-order-received .woocommerce-error {
+  display: none;
+}
+
+.payment_method_myfatoorah_v2 img {
+  padding: 9px;
+  padding-right: -0px !important;
+  margin-right: -8px;
+  max-width: 62px;
+}
+
+.user-name .op-5 {
+  display: none;
+}
+
+.payment_method_bacs img {
+  width: 55%;
+}
+
+@media only screen and (max-width: 600px) {
+  .checkout-page-title .no-click {
+    background-color: #cda349;
+    padding: 5px;
+    color: #fff !important;
+  }
+}
+
+:root {
+  --qlwapp-scheme-font-family: inherit;
+  --qlwapp-scheme-font-size: 18;
+  --qlwapp-scheme-brand: #cda349;
+  --qlwapp-scheme-text: #1c2143;
+  --qlwapp-scheme-qlwapp_scheme_form_nonce: 68136cd10c;
+}
+
+#qlwapp {
+  font-family: var(--qlwapp-scheme-font-family);
+}
+
+#qlwapp {
+  font-size: calc(var(--qlwapp-scheme-font-size) * 1px);
+}
+
+#qlwapp .qlwapp-toggle,
+#qlwapp .qlwapp-box .qlwapp-header,
+#qlwapp .qlwapp-box .qlwapp-user,
+#qlwapp .qlwapp-box .qlwapp-user:before {
+  background-color: var(--qlwapp-scheme-brand);
+}
+
+#qlwapp .qlwapp-toggle,
+#qlwapp .qlwapp-toggle .qlwapp-icon,
+#qlwapp .qlwapp-toggle .qlwapp-text,
+#qlwapp .qlwapp-box .qlwapp-header,
+#qlwapp .qlwapp-box .qlwapp-user {
+  color: var(--qlwapp-scheme-text);
+}
+
+#text-box-1148521585 {
+  width: 53%;
+  right: -25px;
+}
+
+#text-box-1148521585 .text {
+  font-size: 55%;
+}
+
+@media (min-width: 550px) {
+  #text-box-1148521585 {
+    width: 49%;
+  }
+
+  #text-box-1148521585 .text {
+    font-size: 108%;
+  }
+}
+
+#banner-1077371114 {
+	padding-top: 100px;
+	background-color: rgba(0, 0, 0, 0);
+	height: 140px;
+}
+
+#banner-1077371114 .bg.bg-loaded {
+	background-image: url("https://ounce.com.sa/wp-content/uploads/2021/11/1.jpg");
+	background-size: contain;
+}
+
+@media (min-width:550px) {
+	#banner-1077371114 {
+		padding-top: 216px;
+	}
+}
+
+@media (min-width:850px) {
+	#banner-1077371114 {
+		padding-top: 505px;
+	}
+}
+#text-box-2047812489 {
+	width: 53%;
+}
+
+#text-box-2047812489 .text {
+	font-size: 55%;
+}
+
+@media (min-width:550px) {
+	#text-box-2047812489 {
+		width: 49%;
+	}
+
+	#text-box-2047812489 .text {
+		font-size: 108%;
+	}
+}
+
+#banner-2012219148 {
+	padding-top: 100px;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+#banner-2012219148 .bg.bg-loaded {
+	background-image: url(https://ounce.com.sa/wp-content/uploads/2020/09/slide2-min.jpg);
+}
+
+@media (min-width:550px) {
+	#banner-2012219148 {
+		padding-top: 216px;
+	}
+}
+
+@media (min-width:850px) {
+	#banner-2012219148 {
+		padding-top: 505px;
+	}
+}
+
+#text-box-767804644 {
+	width: 53%;
+}
+
+#text-box-767804644 .text {
+	font-size: 55%;
+}
+
+@media (min-width:550px) {
+	#text-box-767804644 {
+		width: 59%;
+	}
+
+	#text-box-767804644 .text {
+		font-size: 108%;
+	}
+}
+#banner-1266308473 {
+	padding-top: 100px;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+#banner-1266308473 .bg.bg-loaded {
+	background-image: url(https://ounce.com.sa/wp-content/uploads/2021/01/notax.jpg);
+}
+
+@media (min-width:550px) {
+	#banner-1266308473 {
+		padding-top: 216px;
+	}
+}
+
+@media (min-width:850px) {
+	#banner-1266308473 {
+		padding-top: 505px;
+	}
+}
+
+
+#text-box-300258635 {
+	width: 48%;
+}
+
+#text-box-300258635 .text {
+	font-size: 70%;
+}
+
+@media (min-width:550px) {
+	#text-box-300258635 {
+		width: 40%;
+	}
+
+	#text-box-300258635 .text {
+		font-size: 100%;
+	}
+}
+
+#banner-1017531022 {
+	padding-top: 126px;
+}
+
+#banner-1017531022 .bg.bg-loaded {
+	background-image: url(https://ounce.com.sa/wp-content/uploads/2021/11/1.jpg);
+}
+
+#banner-1017531022 .overlay {
+	background-color: rgba(0, 0, 0, 0.02);
+}
+
+@media (min-width:550px) {
+	#banner-1017531022 {
+		padding-top: 35%;
+	}
+}
+
+#col-1943979546>.col-inner {
+	padding: 0px 0px 0px 0px;
+	margin: 0 0px 0px 0px;
+}
+
+#text-box-832552348 {
+	width: 85%;
+}
+
+#text-box-832552348 .text {
+	font-size: 70%;
+}
+
+@media (min-width:550px) {
+	#text-box-832552348 {
+		width: 46%;
+	}
+
+	#text-box-832552348 .text {
+		font-size: 100%;
+	}
+}
+
+#banner-1521801541 {
+	padding-top: 150px;
+}
+
+#banner-1521801541 .bg.bg-loaded {
+	background-image: url("https://ounce.com.sa/wp-content/uploads/2020/09/s4.jpg");
+}
+
+#banner-1521801541 .overlay {
+	background-color: rgba(0, 0, 0, 0.11);
+}
+
+@media (min-width:550px) {
+	#banner-1521801541 {
+		padding-top: 330px;
+	}
+
+	#banner-1521801541 .overlay {
+		background-color: rgba(0, 0, 0, 0.02);
+	}
+}
+#col-1589396345>.col-inner {
+	padding: 0px 0px 0px 0px;
+	margin: 0 0px 0px 0px;
+}
+
+#text-box-57006610 {
+	width: 82%;
+}
+
+#text-box-57006610 .text {
+	font-size: 70%;
+}
+
+@media (min-width:550px) {
+	#text-box-57006610 {
+		width: 53%;
+	}
+
+	#text-box-57006610 .text {
+		font-size: 100%;
+	}
+}
+
+#banner-403216540 {
+	padding-top: 150px;
+}
+
+#banner-403216540 .bg.bg-loaded {
+	background-image: url("https://ounce.com.sa/wp-content/uploads/2020/09/b.jpg");
+}
+
+#banner-403216540 .overlay {
+	background-color: rgba(0, 0, 0, 0.11);
+}
+
+@media (min-width:550px) {
+	#banner-403216540 {
+		padding-top: 330px;
+	}
+
+	#banner-403216540 .overlay {
+		background-color: rgba(0, 0, 0, 0.02);
+	}
+}
+
+#col-1742631679>.col-inner {
+	padding: 0px 0px 0px 0px;
+	margin: 0 0px 0px 0px;
+}
+
+#text-box-441669168 {
+	width: 82%;
+}
+
+#text-box-441669168 .text {
+	font-size: 70%;
+}
+
+@media (min-width:550px) {
+	#text-box-441669168 {
+		width: 53%;
+	}
+
+	#text-box-441669168 .text {
+		font-size: 100%;
+	}
+}
+
+#banner-1833919702 {
+	padding-top: 150px;
+}
+
+#banner-1833919702 .bg.bg-loaded {
+	background-image: url(https://ounce.com.sa/wp-content/uploads/2021/11/Untitled-design-3.jpg);
+}
+
+#banner-1833919702 .overlay {
+	background-color: rgba(0, 0, 0, 0.11);
+}
+
+@media (min-width:550px) {
+	#banner-1833919702 {
+		padding-top: 330px;
+	}
+
+	#banner-1833919702 .overlay {
+		background-color: rgba(0, 0, 0, 0.02);
+	}
+}
+#col-341841057>.col-inner {
+	padding: 0px 0px 0px 0px;
+	margin: 0 0px 0px 0px;
+}
+
+
+#text-box-400481049 {
+	width: 78%;
+}
+
+#text-box-400481049 .text {
+	font-size: 70%;
+}
+
+@media (min-width:550px) {
+	#text-box-400481049 {
+		width: 40%;
+	}
+
+	#text-box-400481049 .text {
+		font-size: 100%;
+	}
+}
+
+#banner-1464607919 {
+	padding-top: 150px;
+}
+
+#banner-1464607919 .bg.bg-loaded {
+	background-image: url(https://ounce.com.sa/wp-content/uploads/2020/09/e.jpg);
+}
+
+#banner-1464607919 .overlay {
+	background-color: rgba(0, 0, 0, 0.11);
+}
+
+@media (min-width:550px) {
+	#banner-1464607919 {
+		padding-top: 330px;
+	}
+
+	#banner-1464607919 .overlay {
+		background-color: rgba(0, 0, 0, 0.02);
+	}
+}
+
+#text-box-250763823 {
+	width: 59%;
+}
+
+#text-box-250763823 .text {
+	font-size: 100%;
+}
+
+@media (min-width:850px) {
+	#text-box-250763823 {
+		width: 47%;
+	}
+}
+#banner-1126060404 {
+	padding-top: 106px;
+}
+
+@media (min-width:550px) {
+	#banner-1126060404 {
+		padding-top: 183px;
+	}
+}
+
+@media (min-width:850px) {
+	#banner-1126060404 {
+		padding-top: 259px;
+	}
+}
+#text-box-1382807735 {
+	width: 86%;
+}
+
+#text-box-1382807735 .text {
+	font-size: 100%;
+}
+
+@media (min-width:550px) {
+	#text-box-1382807735 {
+		width: 64%;
+	}
+}

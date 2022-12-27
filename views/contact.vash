@@ -1,0 +1,11 @@
+
+
+
+@html.extend("layout", function(model){
+    @html.block("content", function(model){
+        <div style="height:200px">
+        
+        <h3>اتصل بنا </h3>
+        </div>
+    })
+})

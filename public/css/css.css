@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Almarai';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/tsstApxBaigK_hnnc1o.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Almarai';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/tssoApxBaigK_hnnS-aghng.ttf) format('truetype');
+}

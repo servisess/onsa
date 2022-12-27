@@ -1,0 +1,1004 @@
+
+
+
+@html.extend("layout", function(model){
+    @html.block("content", function(model){
+<section class="blog mt-5 mb-5">
+  <div class="container">
+    <div class="blog-title mt-5 mb-5">
+      <h1>سياسات الاستبدال و الاسترجاع</h1>
+    </div>
+    <div class="blog-text mt-3 mb-5">
+      <p
+        style="
+          box-sizing: inherit;
+          margin-bottom: 0px;
+          padding: 0px;
+          font-family: inherit;
+          border: 0px;
+          font-style: inherit;
+          font-variant: inherit;
+          font-weight: inherit;
+          font-stretch: inherit;
+          line-height: 1.8em;
+          vertical-align: baseline;
+          word-break: break-word;
+          text-align: justify;
+          color: rgb(51, 51, 51);
+          font-size: 15px !important;
+        "
+      >
+        في حال رغبتك باستبدال واسترجاع المنتج بعد شراؤه، يسعدنا تلبية رغبتك
+        وطلبك بكل سرور وفقاً لسياسات الاستبدال والاسترجاع المحددة من قبل وزارة
+        التجارة والاستثمار كالتالي:
+      </p>
+      <p
+        style="
+          box-sizing: inherit;
+          margin-bottom: 0px;
+          padding: 0px;
+          font-family: inherit;
+          border: 0px;
+          font-style: inherit;
+          font-variant: inherit;
+          font-weight: inherit;
+          font-stretch: inherit;
+          line-height: 1.8em;
+          vertical-align: baseline;
+          word-break: break-word;
+          text-align: justify;
+          color: rgb(51, 51, 51);
+          font-size: 15px !important;
+        "
+      >
+        <br
+          style="
+            box-sizing: inherit;
+            margin: 0px;
+            padding: 0px;
+            font-family: segoeui;
+          "
+        />
+      </p>
+      <p
+        style="
+          box-sizing: inherit;
+          margin-bottom: 0px;
+          padding: 0px;
+          font-family: inherit;
+          border: 0px;
+          font-style: inherit;
+          font-variant: inherit;
+          font-weight: inherit;
+          font-stretch: inherit;
+          line-height: 1.8em;
+          vertical-align: baseline;
+          word-break: break-word;
+          text-align: justify;
+          color: rgb(51, 51, 51);
+          font-size: 15px !important;
+        "
+      >
+        <span
+          style="
+            box-sizing: inherit;
+            margin: 0px;
+            padding: 0px;
+            font-family: inherit;
+            font-weight: 700;
+            border: 0px;
+            font-style: inherit;
+            font-variant: inherit;
+            font-stretch: inherit;
+            line-height: inherit;
+            vertical-align: baseline;
+          "
+          >أولاً: الشروط الأساسية لاستبدال أي صنف</span
+        >
+      </p>
+      <p
+        style="
+          box-sizing: inherit;
+          margin-bottom: 0px;
+          padding: 0px;
+          font-family: inherit;
+          border: 0px;
+          font-style: inherit;
+          font-variant: inherit;
+          font-weight: inherit;
+          font-stretch: inherit;
+          line-height: 1.8em;
+          vertical-align: baseline;
+          word-break: break-word;
+          text-align: justify;
+          color: rgb(51, 51, 51);
+          font-size: 15px !important;
+        "
+      >
+        1-&nbsp;إرفاق أصل فاتورة الشراء.
+      </p>
+      <p
+        style="
+          box-sizing: inherit;
+          margin-bottom: 0px;
+          padding: 0px;
+          font-family: inherit;
+          border: 0px;
+          font-style: inherit;
+          font-variant: inherit;
+          font-weight: inherit;
+          font-stretch: inherit;
+          line-height: 1.8em;
+          vertical-align: baseline;
+          word-break: break-word;
+          text-align: justify;
+          color: rgb(51, 51, 51);
+          font-size: 15px !important;
+        "
+      >
+        2- الجهاز المراد استبداله يكون بحالته الأصلية بدون أى أستخدام و بكامل
+        أكسسوارات التغليف الخاصة به.
+      </p>
+      <p
+        style="
+          box-sizing: inherit;
+          margin-bottom: 0px;
+          padding: 0px;
+          font-family: inherit;
+          border: 0px;
+          font-style: inherit;
+          font-variant: inherit;
+          font-weight: inherit;
+          font-stretch: inherit;
+          line-height: 1.8em;
+          vertical-align: baseline;
+          word-break: break-word;
+          text-align: justify;
+          color: rgb(51, 51, 51);
+          font-size: 15px !important;
+        "
+      >
+        3- الاستبدال خلال 3 أيام من تاريخ الفاتورة بحد أقصى.
+      </p>
+      <p
+        style="
+          box-sizing: inherit;
+          margin-bottom: 0px;
+          padding: 0px;
+          font-family: inherit;
+          border: 0px;
+          font-style: inherit;
+          font-variant: inherit;
+          font-weight: inherit;
+          font-stretch: inherit;
+          line-height: 1.8em;
+          vertical-align: baseline;
+          word-break: break-word;
+          text-align: justify;
+          color: rgb(51, 51, 51);
+          font-size: 15px !important;
+        "
+      >
+        <br
+          style="
+            box-sizing: inherit;
+            margin: 0px;
+            padding: 0px;
+            font-family: segoeui;
+          "
+        />
+      </p>
+      <p
+        class="ql-align-right"
+        style="
+          box-sizing: inherit;
+          margin-bottom: 0px;
+          padding: 0px;
+          font-family: inherit;
+          border: 0px;
+          font-style: inherit;
+          font-variant: inherit;
+          font-weight: inherit;
+          font-stretch: inherit;
+          line-height: 1.8em;
+          vertical-align: baseline;
+          word-break: break-word;
+          color: rgb(51, 51, 51);
+          font-size: 15px !important;
+        "
+      >
+        <span
+          style="
+            box-sizing: inherit;
+            margin: 0px;
+            padding: 0px;
+            font-family: inherit;
+            font-weight: 700;
+            border: 0px;
+            font-style: inherit;
+            font-variant: inherit;
+            font-stretch: inherit;
+            line-height: inherit;
+            vertical-align: baseline;
+          "
+          >ثانياً: الشروط الأساسية لاسترجاع أي صنف</span
+        >
+      </p>
+      <p
+        class="ql-align-right"
+        style="
+          box-sizing: inherit;
+          margin-bottom: 0px;
+          padding: 0px;
+          font-family: inherit;
+          border: 0px;
+          font-style: inherit;
+          font-variant: inherit;
+          font-weight: inherit;
+          font-stretch: inherit;
+          line-height: 1.8em;
+          vertical-align: baseline;
+          word-break: break-word;
+          color: rgb(51, 51, 51);
+          font-size: 15px !important;
+        "
+      >
+        1-&nbsp;إرفاق أصل فاتورة الشراء.
+      </p>
+      <p
+        class="ql-align-right"
+        style="
+          box-sizing: inherit;
+          margin-bottom: 0px;
+          padding: 0px;
+          font-family: inherit;
+          border: 0px;
+          font-style: inherit;
+          font-variant: inherit;
+          font-weight: inherit;
+          font-stretch: inherit;
+          line-height: 1.8em;
+          vertical-align: baseline;
+          word-break: break-word;
+          color: rgb(51, 51, 51);
+          font-size: 15px !important;
+        "
+      >
+        2- الإرجاع خلال 3 أيام من تاريخ الفاتورة بحد أقصى
+      </p>
+      <p
+        class="ql-align-right"
+        style="
+          box-sizing: inherit;
+          margin-bottom: 0px;
+          padding: 0px;
+          font-family: inherit;
+          border: 0px;
+          font-style: inherit;
+          font-variant: inherit;
+          font-weight: inherit;
+          font-stretch: inherit;
+          line-height: 1.8em;
+          vertical-align: baseline;
+          word-break: break-word;
+          color: rgb(51, 51, 51);
+          font-size: 15px !important;
+        "
+      >
+        3- الجهاز بحالته الأصلية لم يفتح كما تم شرائه.
+      </p>
+      <p
+        class="ql-align-right"
+        style="
+          box-sizing: inherit;
+          margin-bottom: 0px;
+          padding: 0px;
+          font-family: inherit;
+          border: 0px;
+          font-style: inherit;
+          font-variant: inherit;
+          font-weight: inherit;
+          font-stretch: inherit;
+          line-height: 1.8em;
+          vertical-align: baseline;
+          word-break: break-word;
+          color: rgb(51, 51, 51);
+          font-size: 15px !important;
+        "
+      >
+        4- فى حالة وجود عيب مصنعي فى أى منتج لابد من الأتصال بخدمة العملاء لدى
+        متجر اورجين و الإبلاغ عن عطل الجهاز لكي يتسني مخاطبة الوكيل ليقوم بإعطائنا
+        تقرير كتابي يفيد بأن المنتج به عيب مصنعي عندها نقوم بالتواصل مع العميل
+        خلال مدة أقصاها 48 ساعة من تاريخ وصول التقرير.
+      </p>
+      <p
+        style="
+          box-sizing: inherit;
+          margin-bottom: 0px;
+          padding: 0px;
+          font-family: inherit;
+          border: 0px;
+          font-style: inherit;
+          font-variant: inherit;
+          font-weight: inherit;
+          font-stretch: inherit;
+          line-height: 1.8em;
+          vertical-align: baseline;
+          word-break: break-word;
+          text-align: justify;
+          color: rgb(51, 51, 51);
+          font-size: 15px !important;
+        "
+      >
+        5- لا يسمح بأستبدال أو إرجاع المنتجات الرقمية.
+      </p>
+      <p
+        style="
+          box-sizing: inherit;
+          margin-bottom: 0px;
+          padding: 0px;
+          font-family: inherit;
+          border: 0px;
+          font-style: inherit;
+          font-variant: inherit;
+          font-weight: inherit;
+          font-stretch: inherit;
+          line-height: 1.8em;
+          vertical-align: baseline;
+          word-break: break-word;
+          text-align: justify;
+          color: rgb(51, 51, 51);
+          font-size: 15px !important;
+        "
+      >
+        6- في حال عدم استلام العميل للبضاعة خلال 15 يوم من تاريخ الفاتورة, يحق
+        لمتجرنا الغاء امر البيع (الفاتورة) ويكون المبلغ رصيد للعميل في المتجر.
+      </p>
+      <p
+        style="
+          box-sizing: inherit;
+          margin-bottom: 0px;
+          padding: 0px;
+          font-family: inherit;
+          border: 0px;
+          font-style: inherit;
+          font-variant: inherit;
+          font-weight: inherit;
+          font-stretch: inherit;
+          line-height: 1.8em;
+          vertical-align: baseline;
+          word-break: break-word;
+          text-align: justify;
+          color: rgb(51, 51, 51);
+          font-size: 15px !important;
+        "
+      >
+        <br
+          style="
+            box-sizing: inherit;
+            margin: 0px;
+            padding: 0px;
+            font-family: segoeui;
+          "
+        />
+      </p>
+      <p
+        class="ql-align-right"
+        style="
+          box-sizing: inherit;
+          margin-bottom: 0px;
+          padding: 0px;
+          font-family: inherit;
+          border: 0px;
+          font-style: inherit;
+          font-variant: inherit;
+          font-weight: inherit;
+          font-stretch: inherit;
+          line-height: 1.8em;
+          vertical-align: baseline;
+          word-break: break-word;
+          color: rgb(51, 51, 51);
+          font-size: 15px !important;
+        "
+      >
+        <span
+          style="
+            box-sizing: inherit;
+            margin: 0px;
+            padding: 0px;
+            font-family: inherit;
+            font-weight: 700;
+            border: 0px;
+            font-style: inherit;
+            font-variant: inherit;
+            font-stretch: inherit;
+            line-height: inherit;
+            vertical-align: baseline;
+          "
+          >ثالثاً: حالات الغاء الطلب</span
+        >
+      </p>
+      <p
+        class="ql-align-right"
+        style="
+          box-sizing: inherit;
+          margin-bottom: 0px;
+          padding: 0px;
+          font-family: inherit;
+          border: 0px;
+          font-style: inherit;
+          font-variant: inherit;
+          font-weight: inherit;
+          font-stretch: inherit;
+          line-height: 1.8em;
+          vertical-align: baseline;
+          word-break: break-word;
+          color: rgb(51, 51, 51);
+          font-size: 15px !important;
+        "
+      >
+        1-&nbsp;فشلت عملية الدفع.
+      </p>
+      <p
+        class="ql-align-right"
+        style="
+          box-sizing: inherit;
+          margin-bottom: 0px;
+          padding: 0px;
+          font-family: inherit;
+          border: 0px;
+          font-style: inherit;
+          font-variant: inherit;
+          font-weight: inherit;
+          font-stretch: inherit;
+          line-height: 1.8em;
+          vertical-align: baseline;
+          word-break: break-word;
+          color: rgb(51, 51, 51);
+          font-size: 15px !important;
+        "
+      >
+        2- تأخر العميل لاكثر من ساعة واحدة عن الدفع من خلال نظام سداد للمدفوعات.
+      </p>
+      <p
+        class="ql-align-right"
+        style="
+          box-sizing: inherit;
+          margin-bottom: 0px;
+          padding: 0px;
+          font-family: inherit;
+          border: 0px;
+          font-style: inherit;
+          font-variant: inherit;
+          font-weight: inherit;
+          font-stretch: inherit;
+          line-height: 1.8em;
+          vertical-align: baseline;
+          word-break: break-word;
+          color: rgb(51, 51, 51);
+          font-size: 15px !important;
+        "
+      >
+        3- اذا كان عنوان التوصيل المعطى من قبل العميل خاطئاً أو كانت معلومات
+        الاتصال خاطئة أو لعدم القدرة على الوصول إلى العميل.
+      </p>
+      <p
+        class="ql-align-right"
+        style="
+          box-sizing: inherit;
+          margin-bottom: 0px;
+          padding: 0px;
+          font-family: inherit;
+          border: 0px;
+          font-style: inherit;
+          font-variant: inherit;
+          font-weight: inherit;
+          font-stretch: inherit;
+          line-height: 1.8em;
+          vertical-align: baseline;
+          word-break: break-word;
+          color: rgb(51, 51, 51);
+          font-size: 15px !important;
+        "
+      >
+        <br
+          style="
+            box-sizing: inherit;
+            margin: 0px;
+            padding: 0px;
+            font-family: segoeui;
+          "
+        />
+      </p>
+      <p
+        class="ql-align-right"
+        style="
+          box-sizing: inherit;
+          margin-bottom: 0px;
+          padding: 0px;
+          font-family: inherit;
+          border: 0px;
+          font-style: inherit;
+          font-variant: inherit;
+          font-weight: inherit;
+          font-stretch: inherit;
+          line-height: 1.8em;
+          vertical-align: baseline;
+          word-break: break-word;
+          color: rgb(51, 51, 51);
+          font-size: 15px !important;
+        "
+      >
+        <span
+          style="
+            box-sizing: inherit;
+            margin: 0px;
+            padding: 0px;
+            font-family: inherit;
+            font-weight: 700;
+            border: 0px;
+            font-style: inherit;
+            font-variant: inherit;
+            font-stretch: inherit;
+            line-height: inherit;
+            vertical-align: baseline;
+          "
+          >رابعاً: رد المدفوعات عند الاسترجاع</span
+        >
+      </p>
+      <p
+        class="ql-align-right"
+        style="
+          box-sizing: inherit;
+          margin-bottom: 0px;
+          padding: 0px;
+          font-family: inherit;
+          border: 0px;
+          font-style: inherit;
+          font-variant: inherit;
+          font-weight: inherit;
+          font-stretch: inherit;
+          line-height: 1.8em;
+          vertical-align: baseline;
+          word-break: break-word;
+          color: rgb(51, 51, 51);
+          font-size: 15px !important;
+        "
+      >
+        يحق للمستهلك الاسترجاع في حال عدم مطابقة المواصفات و شمولها للنقاط
+        الرئيسية والمهمة للعلم بها او وجود عيب بالمنتج، تستطيع في خلال 7 أيام من
+        استلامك المنتج أن تطلب طلب إعادة المدفوعات/ المنتج" لإرجاع المنتج إلى
+        العيدروس.&nbsp;
+      </p>
+      <p
+        class="ql-align-right"
+        style="
+          box-sizing: inherit;
+          margin-bottom: 0px;
+          padding: 0px;
+          font-family: inherit;
+          border: 0px;
+          font-style: inherit;
+          font-variant: inherit;
+          font-weight: inherit;
+          font-stretch: inherit;
+          line-height: 1.8em;
+          vertical-align: baseline;
+          word-break: break-word;
+          color: rgb(51, 51, 51);
+          font-size: 15px !important;
+        "
+      >
+        <br
+          style="
+            box-sizing: inherit;
+            margin: 0px;
+            padding: 0px;
+            font-family: segoeui;
+          "
+        />
+      </p>
+      <p
+        class="ql-align-right"
+        style="
+          box-sizing: inherit;
+          margin-bottom: 0px;
+          padding: 0px;
+          font-family: inherit;
+          border: 0px;
+          font-style: inherit;
+          font-variant: inherit;
+          font-weight: inherit;
+          font-stretch: inherit;
+          line-height: 1.8em;
+          vertical-align: baseline;
+          word-break: break-word;
+          color: rgb(51, 51, 51);
+          font-size: 15px !important;
+        "
+      >
+        وفي حال وجود عيب مصنعي او عطل فني خلال فترة الإستبدال, يُرجى الاتصال
+        بخدمة العملاء عبر الواتس المسجل والإبلاغ عن العطل حتى يتسنى لنا مخاطبة
+        الوكيل لإرسال فني من جهته ورفع تقرير إلينا, وسيتم التواصل معكم خلال 48
+        ساعة من وصول التقرير ولخدمة أسرع, يُمكنكم مخاطبة الوكيل بموجب فاتورة
+        الشراء.
+      </p>
+      <p
+        class="ql-align-right"
+        style="
+          box-sizing: inherit;
+          margin-bottom: 0px;
+          padding: 0px;
+          font-family: inherit;
+          border: 0px;
+          font-style: inherit;
+          font-variant: inherit;
+          font-weight: inherit;
+          font-stretch: inherit;
+          line-height: 1.8em;
+          vertical-align: baseline;
+          word-break: break-word;
+          color: rgb(51, 51, 51);
+          font-size: 15px !important;
+        "
+      >
+        <br
+          style="
+            box-sizing: inherit;
+            margin: 0px;
+            padding: 0px;
+            font-family: segoeui;
+          "
+        />
+      </p>
+      <p
+        style="
+          box-sizing: inherit;
+          margin-bottom: 0px;
+          padding: 0px;
+          font-family: inherit;
+          border: 0px;
+          font-style: inherit;
+          font-variant: inherit;
+          font-weight: inherit;
+          font-stretch: inherit;
+          line-height: 1.8em;
+          vertical-align: baseline;
+          word-break: break-word;
+          text-align: justify;
+          color: rgb(51, 51, 51);
+          font-size: 15px !important;
+        "
+      >
+        في حال استرجاع المبلغ المدفوع بواسطة بطاقة إئتمانية, يستوجب على العميل
+        مخاطبة البنك, ومتجر اورجين غير مسئولة عن فترة استرجاع المبلغ لحساب العميل.
+        لكن غالبا تكون خلال 7 ايام عمل.
+      </p>
+      <p
+        class="ql-align-right"
+        style="
+          box-sizing: inherit;
+          margin-bottom: 0px;
+          padding: 0px;
+          font-family: inherit;
+          border: 0px;
+          font-style: inherit;
+          font-variant: inherit;
+          font-weight: inherit;
+          font-stretch: inherit;
+          line-height: 1.8em;
+          vertical-align: baseline;
+          word-break: break-word;
+          color: rgb(51, 51, 51);
+          font-size: 15px !important;
+        "
+      >
+        <br
+          style="
+            box-sizing: inherit;
+            margin: 0px;
+            padding: 0px;
+            font-family: segoeui;
+          "
+        />
+      </p>
+      <p
+        style="
+          box-sizing: inherit;
+          margin-bottom: 0px;
+          padding: 0px;
+          font-family: inherit;
+          border: 0px;
+          font-style: inherit;
+          font-variant: inherit;
+          font-weight: inherit;
+          font-stretch: inherit;
+          line-height: 1.8em;
+          vertical-align: baseline;
+          word-break: break-word;
+          text-align: justify;
+          color: rgb(51, 51, 51);
+          font-size: 15px !important;
+        "
+      >
+        في حالة ارجاع المنتج بسبب خلل في المنتج أو عيب من الشركة المصنعة أو
+        نتيجة ضرر خلال توصيل المنتج أو بسبب توصيل المنتج الخاطيء، فلن يتم احتساب
+        رسوم إضافية لخدمة الشحن أو رسوم التحويل البنكي.
+      </p>
+      <p
+        style="
+          box-sizing: inherit;
+          margin-bottom: 0px;
+          padding: 0px;
+          font-family: inherit;
+          border: 0px;
+          font-style: inherit;
+          font-variant: inherit;
+          font-weight: inherit;
+          font-stretch: inherit;
+          line-height: 1.8em;
+          vertical-align: baseline;
+          word-break: break-word;
+          text-align: justify;
+          color: rgb(51, 51, 51);
+          font-size: 15px !important;
+        "
+      >
+        في حالة الارجاع لأسباب أخرى، ( حاجة الزبون إلى تبديل المنتج أو تغيرت
+        رغبة الزبون بشكل عام) يتم تحميل العميل قيمة التحميل والتنزيل بنسبة 2% من
+        قيمة الفاتورة بحد أدنى 100 ريال.
+      </p>
+      <p
+        style="
+          box-sizing: inherit;
+          margin-bottom: 0px;
+          padding: 0px;
+          font-family: inherit;
+          border: 0px;
+          font-style: inherit;
+          font-variant: inherit;
+          font-weight: inherit;
+          font-stretch: inherit;
+          line-height: 1.8em;
+          vertical-align: baseline;
+          word-break: break-word;
+          text-align: justify;
+          color: rgb(51, 51, 51);
+          font-size: 15px !important;
+        "
+      >
+        <br
+          style="
+            box-sizing: inherit;
+            margin: 0px;
+            padding: 0px;
+            font-family: segoeui;
+          "
+        />
+      </p>
+      <p
+        class="ql-align-right"
+        style="
+          box-sizing: inherit;
+          margin-bottom: 0px;
+          padding: 0px;
+          font-family: inherit;
+          border: 0px;
+          font-style: inherit;
+          font-variant: inherit;
+          font-weight: inherit;
+          font-stretch: inherit;
+          line-height: 1.8em;
+          vertical-align: baseline;
+          word-break: break-word;
+          color: rgb(51, 51, 51);
+          font-size: 15px !important;
+        "
+      >
+        عند التحضير لترجيع المنتج، يجب أن يكون المنتج في حالته الأصلية مع كامل
+        الإكسسوارات وكتيب الإرشادات الملحقة وبالتعبئة الأصلية. لا نقبل ترجيع
+        المنتجات المحتوية على خدوش أو كانت متضررة بسبب سوء الاستخدام أو نشوء عطل
+        بسبب استخدام فولت غير مطابق.
+      </p>
+      <p
+        class="ql-align-right"
+        style="
+          box-sizing: inherit;
+          margin-bottom: 0px;
+          padding: 0px;
+          font-family: inherit;
+          border: 0px;
+          font-style: inherit;
+          font-variant: inherit;
+          font-weight: inherit;
+          font-stretch: inherit;
+          line-height: 1.8em;
+          vertical-align: baseline;
+          word-break: break-word;
+          color: rgb(51, 51, 51);
+          font-size: 15px !important;
+        "
+      >
+        <br
+          style="
+            box-sizing: inherit;
+            margin: 0px;
+            padding: 0px;
+            font-family: segoeui;
+          "
+        />
+      </p>
+      <p
+        class="ql-align-right"
+        style="
+          box-sizing: inherit;
+          margin-bottom: 0px;
+          padding: 0px;
+          font-family: inherit;
+          border: 0px;
+          font-style: inherit;
+          font-variant: inherit;
+          font-weight: inherit;
+          font-stretch: inherit;
+          line-height: 1.8em;
+          vertical-align: baseline;
+          word-break: break-word;
+          color: rgb(51, 51, 51);
+          font-size: 15px !important;
+        "
+      >
+        <span
+          style="
+            box-sizing: inherit;
+            margin: 0px;
+            padding: 0px;
+            font-family: inherit;
+            font-weight: 700;
+            border: 0px;
+            font-style: inherit;
+            font-variant: inherit;
+            font-stretch: inherit;
+            line-height: inherit;
+            vertical-align: baseline;
+          "
+          >خامساً: الضمان والصيانة</span
+        >
+      </p>
+      <p
+        class="ql-align-right"
+        style="
+          box-sizing: inherit;
+          margin-bottom: 0px;
+          padding: 0px;
+          font-family: inherit;
+          border: 0px;
+          font-style: inherit;
+          font-variant: inherit;
+          font-weight: inherit;
+          font-stretch: inherit;
+          line-height: 1.8em;
+          vertical-align: baseline;
+          word-break: break-word;
+          color: rgb(51, 51, 51);
+          font-size: 15px !important;
+        "
+      >
+        - الضمان هو ضمان الوكيل وليس ضمان متجر اورجين , كما أن الضمان لايشمل سوء
+        الاستخدام الناتج من العميل.
+      </p>
+      <p
+        class="ql-align-right"
+        style="
+          box-sizing: inherit;
+          margin-bottom: 0px;
+          padding: 0px;
+          font-family: inherit;
+          border: 0px;
+          font-style: inherit;
+          font-variant: inherit;
+          font-weight: inherit;
+          font-stretch: inherit;
+          line-height: 1.8em;
+          vertical-align: baseline;
+          word-break: break-word;
+          color: rgb(51, 51, 51);
+          font-size: 15px !important;
+        "
+      >
+        - المنتجات المباعة من قبلنا هي مؤمنة بضمان المصنع لمدة سنة. يبدأ مفعول
+        ضمان المصنع من تاريخ الشراء.
+      </p>
+      <p
+        style="
+          box-sizing: inherit;
+          margin-bottom: 0px;
+          padding: 0px;
+          font-family: inherit;
+          border: 0px;
+          font-style: inherit;
+          font-variant: inherit;
+          font-weight: inherit;
+          font-stretch: inherit;
+          line-height: 1.8em;
+          vertical-align: baseline;
+          word-break: break-word;
+          text-align: justify;
+          color: rgb(51, 51, 51);
+          font-size: 15px !important;
+        "
+      >
+        - يجب عليك قراءة كتيب ارشادات المالك قبل استخدام المنتج لتتأكد من
+        تطابقها مع معايير السلامة و الأمان والمتطلبات الكهربائية المحلية.
+      </p>
+      <p
+        class="ql-align-right"
+        style="
+          box-sizing: inherit;
+          margin-bottom: 0px;
+          padding: 0px;
+          font-family: inherit;
+          border: 0px;
+          font-style: inherit;
+          font-variant: inherit;
+          font-weight: inherit;
+          font-stretch: inherit;
+          line-height: 1.8em;
+          vertical-align: baseline;
+          word-break: break-word;
+          color: rgb(51, 51, 51);
+          font-size: 15px !important;
+        "
+      >
+        - تم تصميم جميع الأجهزة الكهربائية التي نبيعها لتعمل على نطاق 220-240
+        فولت مالم يحدد غير ذلك.
+      </p>
+      <p
+        class="ql-align-right"
+        style="
+          box-sizing: inherit;
+          margin-bottom: 0px;
+          padding: 0px;
+          font-family: inherit;
+          border: 0px;
+          font-style: inherit;
+          font-variant: inherit;
+          font-weight: inherit;
+          font-stretch: inherit;
+          line-height: 1.8em;
+          vertical-align: baseline;
+          word-break: break-word;
+          color: rgb(51, 51, 51);
+          font-size: 15px !important;
+        "
+      >
+        إذا لم يكن لديك المجال المناسب لتشغيل المنتج باستخدام هذا الفولت/المصدر
+        الكهربائي فننصحك بعدم استخدام المنتج. إن المنتجات التالفة بسبب استخدام
+        مصدر كهربائي خاطئ لن يتم قبولها تحت الشروط والأحكام الخاصة بضمان المصنع.
+      </p>
+      <p
+        class="ql-align-right"
+        style="
+          box-sizing: inherit;
+          margin-bottom: 0px;
+          padding: 0px;
+          font-family: inherit;
+          border: 0px;
+          font-style: inherit;
+          font-variant: inherit;
+          font-weight: inherit;
+          font-stretch: inherit;
+          line-height: 1.8em;
+          vertical-align: baseline;
+          word-break: break-word;
+          color: rgb(51, 51, 51);
+          font-size: 15px !important;
+        "
+      >
+        <br />
+      </p>
+    </div>
+  </div>
+</section>
+
+    })
+})

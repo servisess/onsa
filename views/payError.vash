@@ -1,0 +1,17 @@
+@html.extend('layout', function(model) {
+  @html.block('content', function(model) {
+  
+     <div class="error-pay" style="; padding:2rem" >
+        <h1 style="">خطأ 401</h1>
+        <h2 style="">حدث خطأ اثناء معالجة عملية الدفع </h2>
+        @* <pre style="">يرجى التحقق من البيانات المدخلة والمحاولة مرة اخرى</pre> *@
+         <a href="/checkout-card" class="btn d-flex mx-auto errbtn" ><b style="">حاول مرة اخرى </b></a>
+          <br>
+          <h4 style=";margin:auto;text-align: center;">او التواصل مباشرة مع الدعم الفني </h4>
+         <a href="https://wa.me/966596583284" class="btn d-flex mx-auto errbtn" >
+            <i class="fa fa-whatsapp" style="; font-size:25px"></i> 
+           <b style="">  واتساب </b>
+         </a>
+    </div>
+  })
+})

@@ -1,0 +1,206 @@
+
+@html.extend('layout', function(model) {
+
+  @html.block('content', function(model) {
+    <div class="main flex-grow-1 app-content">
+            <section class="product products-details-page">
+                <div class="container pb-5">
+                    <section class="products-details mb-5">
+                        <div>
+                            <div class="row">
+                                <div class="col-lg-6">
+
+                                    <div id="wrap">
+                                        <div class="row">
+                                            <div class="col-12 col-product-image-wrapper">
+
+                                                <div
+                                                    class="box-1-1 product-images-carousel product-images-carousel-init ">
+                                                    <div class="content">
+                                                        <div id="product-images" class="product-images slide gallery">
+                                                            <div id="product-images-slick">
+                                                                <div>
+                                                                    <div class="box-1-1">
+                                                                        <div class="content">
+                                                                            <a class="image-link"
+                                                                                style="display:block; width: 100%; height: 100%;">
+                                                                                <img src="@model.product.image"
+                                                                                    class="carousel-img"
+                                                                                    alt="@model.product.name">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="row lg-thumbs d-lg-flex product-images-carousel-thumbs d-none-important">
+                                                    <div class="col-3">
+                                                        <div class="box-1-1">
+                                                            <div class="content">
+                                                                <a class="d-flex align-items-center justify-content-center thumb-image-a"
+                                                                    data-index="0" style="width: 100%; height: 100%;">
+                                                                    <img src="@model.product.image"
+                                                                        data-index="0">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="box-1-1 product-images-empty d-none">
+                                                    <div class="content">
+                                                        <div class="d-flex" style="width: 100%; height: 100%;">
+                                                            <img src="@model.product.image" width="100%" height="auto">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6  col-product-info col-product-info-single-image">
+                                    <section>
+                                        <h1>@model.product.name</h1>
+                                        <div class="d-flex flex-column flex-lg-row product-features">
+                                        </div>
+                                        <p>
+                                            @model.product.description
+                                            &nbsp;<a id="product-description-a" href="#product-description"
+                                                class="text-color-primary">المزيد من المعلومات</a>
+                                        </p>
+                                        <div class="d-flex">
+                                            <div>
+                                                <h1 class="product-formatted-price theme-text-primary">@model.product.newPrice.00 ر.س </h1>
+                                                <p>
+                                                    <del class="product-formatted-price-old"></del>
+                                                    <span class="product-formatted-price-discount"
+                                                        style="color:#f25f5f;"></span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                        </div>
+                                    </section>
+                                    <div class="border-product"></div>
+                                    <div style="margin-bottom: 25px" class="div-product-sku ">
+                                        <h4 class="product-title">رمز المنتج</h4>
+                                        <div class="product-sku">
+                                           @model.product.productCode
+                                        </div>
+                                    </div>
+                                    <div style="margin-bottom: 25px" class="div-product-weight ">
+                                        <h4 class="product-title">الوزن</h4>
+                                        <div class="product-weight">
+                                            @model.product.weight&nbsp;kg
+                                        </div>
+                                    </div>
+                                    <form id="product-form">
+                                        <input id="product-id" type="hidden"
+                                            value="5258b4ba-140e-461d-a5da-23de515b6adc">
+                                        <div class="size-box">
+
+                                        </div>
+                                        <div class="border-product" style="margin-top: 15px"></div>
+                                        <div class="select-quantity-div">
+                                            <h4 class="product-title">الكمية</h4>
+                                            <div class="form-group">
+                                                <div>
+                                                    <select id="product-quantity" name="quantity"
+                                                        class="select-quantity">
+                                                        <option value="1" selected>1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="section-out-of-stock-notify-me d-none">
+                                            <div class="border-product" style="margin-top: 15px"></div>
+                                            <div>
+                                                <h4 class="product-title">نفدت الكمية</h4>
+                                                <form>
+                                                    <div class="form-group form-notify-me">
+                                                        <h4>نبهني عندما يكون المنتج متاح</h4>
+                                                        <div class="d-flex">
+                                                            <input type="hidden" class="send-notify-product-id"
+                                                                value="5258b4ba-140e-461d-a5da-23de515b6adc">
+                                                            <input class="form-control send-notify-email" type="email"
+                                                                placeholder="أدخل البريد الإلكتروني">
+                                                            <button type="button"
+                                                                class="btn btn-primary btn-send-notify"
+                                                                onclick="sendProductNotifyMe()">
+                                                                <img class="send-notify-progress d-none"
+                                                                    src="spinner.gif" width="15" height="15">
+                                                                إرسال
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="product-buttons d-block">
+                                        <div class="border-product"></div>
+                                        <a href="/cart/@model.product.id" id="product-view-add-to-cart" style="margin-bottom: 20px"
+                                            class="btn btn-add-to-cart" type="button" onclick="productAddToCart()">
+                                            <i class="fa fa-shopping-cart me-1" aria-hidden="true"></i>
+                                            <img class="add-to-cart-progress d-none" src="spinner.gif" width="25"
+                                                height="25">
+                                            <span>اضف للسلة</span>
+                                        </a>
+                                    </div>
+                                    <div class="border-product"></div>
+                                    <div class="border-product">
+                                        <h4 class="product-title">شارك المنتج</h4>
+                                        <div class="product-icon">
+                                            <div class="product-social d-flex">
+                                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://mtjrazez.com/products/@model.product.id"
+                                                    target="_blank"><i class="icon-facebook-f"></i></a>
+                                                <a href="https://www.pinterest.com/pin/create/button/?url=https://mtjrazez.com/products/@model.product.id"
+                                                    target="_blank"><i class="icon-pinterest"></i></a>
+                                                <a href="https://twitter.com/intent/tweet?text=@model.product.name: https://mtjrazez.com/products/@model.product.id"
+                                                    target="_blank"><i class="icon-twitter"></i></a>
+                                                <a href="https://api.whatsapp.com/send?text=اطَّلع على المنتج التالي:@model.product.name https://mtjrazez.com/products/@model.product.id"
+                                                    target="_blank">
+                                                    <i class="icon-whatsapp"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="product-description" class="mt-5">
+                        <div class="d-flex align-items-center">
+                            <div class="description-icon">
+                                <span class="icon-fact_check_black"></span>
+                            </div>
+                            <div class="description-title">
+                                وصف المنتج
+                            </div>
+                        </div>
+                        <div class="description-paragrah text-justify description-text-clear">
+                            <p>@model.product.name</p>
+                            
+                            @if(model.product.color !=""){
+                                <p>اللون :  @model.product.color</p>
+                            }
+                            @if(model.product.capacity !=""){
+                                <p>السعة :  @model.product.capacity</p>
+                            }
+                            
+                            <p>الحالة : جديد</p>
+                            <p>الضمان :  سنة</p>
+                            <p><br></p>
+                        </div>
+                    </section>
+                </div>
+            </section>
+    </div>
+  })
+})
