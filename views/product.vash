@@ -2,205 +2,472 @@
 @html.extend('layout', function(model) {
 
   @html.block('content', function(model) {
-    <div class="main flex-grow-1 app-content">
-            <section class="product products-details-page">
-                <div class="container pb-5">
-                    <section class="products-details mb-5">
-                        <div>
-                            <div class="row">
-                                <div class="col-lg-6">
+     
+		<main id="main" class>
 
-                                    <div id="wrap">
-                                        <div class="row">
-                                            <div class="col-12 col-product-image-wrapper">
+			<div class="shop-container">
 
-                                                <div
-                                                    class="box-1-1 product-images-carousel product-images-carousel-init ">
-                                                    <div class="content">
-                                                        <div id="product-images" class="product-images slide gallery">
-                                                            <div id="product-images-slick">
-                                                                <div>
-                                                                    <div class="box-1-1">
-                                                                        <div class="content">
-                                                                            <a class="image-link"
-                                                                                style="display:block; width: 100%; height: 100%;">
-                                                                                <img src="@model.product.image"
-                                                                                    class="carousel-img"
-                                                                                    alt="@model.product.name">
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="row lg-thumbs d-lg-flex product-images-carousel-thumbs d-none-important">
-                                                    <div class="col-3">
-                                                        <div class="box-1-1">
-                                                            <div class="content">
-                                                                <a class="d-flex align-items-center justify-content-center thumb-image-a"
-                                                                    data-index="0" style="width: 100%; height: 100%;">
-                                                                    <img src="@model.product.image"
-                                                                        data-index="0">
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+				<div class="container">
+					<div class="woocommerce-notices-wrapper"></div>
+				</div>
+				<div id="product-1491"
+					class="product type-product post-1491 status-publish first instock product_cat---pamp has-post-thumbnail purchasable product-type-simple">
+					<div class="product-container">
 
-                                                <div class="box-1-1 product-images-empty d-none">
-                                                    <div class="content">
-                                                        <div class="d-flex" style="width: 100%; height: 100%;">
-                                                            <img src="@model.product.image" width="100%" height="auto">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6  col-product-info col-product-info-single-image">
-                                    <section>
-                                        <h1>@model.product.name</h1>
-                                        <div class="d-flex flex-column flex-lg-row product-features">
-                                        </div>
-                                        <p>
-                                            @model.product.description
-                                            &nbsp;<a id="product-description-a" href="#product-description"
-                                                class="text-color-primary">المزيد من المعلومات</a>
-                                        </p>
-                                        <div class="d-flex">
-                                            <div>
-                                                <h1 class="product-formatted-price theme-text-primary">@model.product.newPrice.00 ر.س </h1>
-                                                <p>
-                                                    <del class="product-formatted-price-old"></del>
-                                                    <span class="product-formatted-price-discount"
-                                                        style="color:#f25f5f;"></span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div>
-                                        </div>
-                                    </section>
-                                    <div class="border-product"></div>
-                                    <div style="margin-bottom: 25px" class="div-product-sku ">
-                                        <h4 class="product-title">رمز المنتج</h4>
-                                        <div class="product-sku">
-                                           @model.product.productCode
-                                        </div>
-                                    </div>
-                                    <div style="margin-bottom: 25px" class="div-product-weight ">
-                                        <h4 class="product-title">الوزن</h4>
-                                        <div class="product-weight">
-                                            @model.product.weight&nbsp;kg
-                                        </div>
-                                    </div>
-                                    <form id="product-form">
-                                        <input id="product-id" type="hidden"
-                                            value="5258b4ba-140e-461d-a5da-23de515b6adc">
-                                        <div class="size-box">
+						<div class="product-main">
+							<div class="row content-row mb-0">
 
-                                        </div>
-                                        <div class="border-product" style="margin-top: 15px"></div>
-                                        <div class="select-quantity-div">
-                                            <h4 class="product-title">الكمية</h4>
-                                            <div class="form-group">
-                                                <div>
-                                                    <select id="product-quantity" name="quantity"
-                                                        class="select-quantity">
-                                                        <option value="1" selected>1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="section-out-of-stock-notify-me d-none">
-                                            <div class="border-product" style="margin-top: 15px"></div>
-                                            <div>
-                                                <h4 class="product-title">نفدت الكمية</h4>
-                                                <form>
-                                                    <div class="form-group form-notify-me">
-                                                        <h4>نبهني عندما يكون المنتج متاح</h4>
-                                                        <div class="d-flex">
-                                                            <input type="hidden" class="send-notify-product-id"
-                                                                value="5258b4ba-140e-461d-a5da-23de515b6adc">
-                                                            <input class="form-control send-notify-email" type="email"
-                                                                placeholder="أدخل البريد الإلكتروني">
-                                                            <button type="button"
-                                                                class="btn btn-primary btn-send-notify"
-                                                                onclick="sendProductNotifyMe()">
-                                                                <img class="send-notify-progress d-none"
-                                                                    src="spinner.gif" width="15" height="15">
-                                                                إرسال
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <div class="product-buttons d-block">
-                                        <div class="border-product"></div>
-                                        <a href="/cart/@model.product.id" id="product-view-add-to-cart" style="margin-bottom: 20px"
-                                            class="btn btn-add-to-cart" type="button" onclick="productAddToCart()">
-                                            <i class="fa fa-shopping-cart me-1" aria-hidden="true"></i>
-                                            <img class="add-to-cart-progress d-none" src="spinner.gif" width="25"
-                                                height="25">
-                                            <span>اضف للسلة</span>
-                                        </a>
-                                    </div>
-                                    <div class="border-product"></div>
-                                    <div class="border-product">
-                                        <h4 class="product-title">شارك المنتج</h4>
-                                        <div class="product-icon">
-                                            <div class="product-social d-flex">
-                                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://mtjrazez.com/products/@model.product.id"
-                                                    target="_blank"><i class="icon-facebook-f"></i></a>
-                                                <a href="https://www.pinterest.com/pin/create/button/?url=https://mtjrazez.com/products/@model.product.id"
-                                                    target="_blank"><i class="icon-pinterest"></i></a>
-                                                <a href="https://twitter.com/intent/tweet?text=@model.product.name: https://mtjrazez.com/products/@model.product.id"
-                                                    target="_blank"><i class="icon-twitter"></i></a>
-                                                <a href="https://api.whatsapp.com/send?text=اطَّلع على المنتج التالي:@model.product.name https://mtjrazez.com/products/@model.product.id"
-                                                    target="_blank">
-                                                    <i class="icon-whatsapp"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section id="product-description" class="mt-5">
-                        <div class="d-flex align-items-center">
-                            <div class="description-icon">
-                                <span class="icon-fact_check_black"></span>
-                            </div>
-                            <div class="description-title">
-                                وصف المنتج
-                            </div>
-                        </div>
-                        <div class="description-paragrah text-justify description-text-clear">
-                            <p>@model.product.name</p>
-                            
-                            @if(model.product.color !=""){
-                                <p>اللون :  @model.product.color</p>
-                            }
-                            @if(model.product.capacity !=""){
-                                <p>السعة :  @model.product.capacity</p>
-                            }
-                            
-                            <p>الحالة : جديد</p>
-                            <p>الضمان :  سنة</p>
-                            <p><br></p>
-                        </div>
-                    </section>
-                </div>
-            </section>
-    </div>
+								<div class="product-gallery col large-6">
+
+									<div class="product-images relative mb-half has-hover woocommerce-product-gallery woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-4 images"
+										data-columns="4">
+
+										<div class="badge-container is-larger absolute left top z-1">
+										</div>
+										<div class="image-tools absolute top show-on-hover right z-3">
+										</div>
+
+										<figure
+											class="woocommerce-product-gallery__wrapper product-gallery-slider slider slider-nav-small mb-half"
+											data-flickity-options="{
+											" cellAlign": "center" , "wrapAround" : true, "autoPlay" : false, "prevNextButtons"
+											:true, "adaptiveHeight" : true, "imagesLoaded" : true, "lazyLoad" :
+											1, "dragThreshold" : 15, "pageDots" : false, "rightToLeft" : true }">
+											
+											<div data-thumb="@model.product.image"
+												class="woocommerce-product-gallery__image slide first"><a
+													href="@model.product.image"><img
+														width="500" height="500"
+														src="@model.product.image"
+														class="lazy-load wp-post-image skip-lazy" alt loading="lazy"
+														title="2.5 GRAM" data-caption
+														data-src="@model.product.image"
+														data-large_image="@model.product.image"
+														data-large_image_width="500" data-large_image_height="500"
+														srcset
+														data-srcset="@model.product.image 500w, h@model.product.image 300w, @model.product.image 150w, @model.product.image 100w"
+														sizes="(max-width: 500px) 100vw, 500px"></a>
+											</div>
+
+											@* <div data-thumb="https://ounce.com.sa/wp-content/uploads/2021/11/2.5-BACK-100x100.jpg"
+												class="woocommerce-product-gallery__image slide"><a
+													href="https://ounce.com.sa/wp-content/uploads/2021/11/2.5-BACK.jpg"><img
+														width="600" height="600"
+														src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20900%20900%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E"
+														class="lazy-load skip-lazy" alt loading="lazy" title="2.5 BACK"
+														data-caption
+														data-src="https://ounce.com.sa/wp-content/uploads/2021/11/2.5-BACK.jpg"
+														data-large_image="https://ounce.com.sa/wp-content/uploads/2021/11/2.5-BACK.jpg"
+														data-large_image_width="900" data-large_image_height="900"
+														srcset
+														data-srcset="https://ounce.com.sa/wp-content/uploads/2021/11/2.5-BACK-600x600.jpg 600w, https://ounce.com.sa/wp-content/uploads/2021/11/2.5-BACK-300x300.jpg 300w, https://ounce.com.sa/wp-content/uploads/2021/11/2.5-BACK-150x150.jpg 150w, https://ounce.com.sa/wp-content/uploads/2021/11/2.5-BACK-768x768.jpg 768w, https://ounce.com.sa/wp-content/uploads/2021/11/2.5-BACK-100x100.jpg 100w, https://ounce.com.sa/wp-content/uploads/2021/11/2.5-BACK.jpg 900w"
+														sizes="(max-width: 600px) 100vw, 600px"></a>
+											</div>
+											<div data-thumb="https://ounce.com.sa/wp-content/uploads/2021/11/front2_63_4-1-100x100.jpg"
+												class="woocommerce-product-gallery__image slide"><a
+													href="https://ounce.com.sa/wp-content/uploads/2021/11/front2_63_4-1.jpg"><img
+														width="600" height="600"
+														src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20900%20900%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E"
+														class="lazy-load skip-lazy" alt loading="lazy"
+														title="front2_63_4" data-caption
+														data-src="https://ounce.com.sa/wp-content/uploads/2021/11/front2_63_4-1.jpg"
+														data-large_image="https://ounce.com.sa/wp-content/uploads/2021/11/front2_63_4-1.jpg"
+														data-large_image_width="900" data-large_image_height="900"
+														srcset
+														data-srcset="https://ounce.com.sa/wp-content/uploads/2021/11/front2_63_4-1-600x600.jpg 600w, https://ounce.com.sa/wp-content/uploads/2021/11/front2_63_4-1-300x300.jpg 300w, https://ounce.com.sa/wp-content/uploads/2021/11/front2_63_4-1-150x150.jpg 150w, https://ounce.com.sa/wp-content/uploads/2021/11/front2_63_4-1-768x768.jpg 768w, https://ounce.com.sa/wp-content/uploads/2021/11/front2_63_4-1-100x100.jpg 100w, https://ounce.com.sa/wp-content/uploads/2021/11/front2_63_4-1.jpg 900w"
+														sizes="(max-width: 600px) 100vw, 600px"></a>
+											</div> *@
+										</figure>
+
+										<div class="image-tools absolute bottom left z-3">
+											<a href="#product-zoom"
+												class="zoom-button button is-outline circle icon tooltip hide-for-small"
+												title="Zoom">
+												<i class="icon-expand"></i> </a>
+										</div>
+									</div>
+
+									 @*  <div class="product-thumbnails thumbnails slider-no-arrows slider row row-small row-slider slider-nav-small small-columns-4"
+										data-flickity-options="{
+			                            " cellAlign": "right" , "wrapAround" : false, "autoPlay" : false, "prevNextButtons" : true, "asNavFor"
+										: ".product-gallery-slider" , "percentPosition" : true, "imagesLoaded" :
+										true, "pageDots" : false, "rightToLeft" : true, "contain" : true }">
+										<div class="col is-nav-selected first">
+											<a>
+												<img src="img/2.5-GRAM-300x300.jpg" alt width="300" height="300"
+													class="attachment-woocommerce_thumbnail"> </a>
+										</div>
+										<div class="col"><a><img
+													src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20300%20300%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E"
+													data-src="https://ounce.com.sa/wp-content/uploads/2021/11/2.5-BACK-300x300.jpg"
+													alt width="300" height="300"
+													class="lazy-load attachment-woocommerce_thumbnail"></a></div>
+										<div class="col"><a><img
+													src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20300%20300%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E"
+													data-src="https://ounce.com.sa/wp-content/uploads/2021/11/front2_63_4-1-300x300.jpg"
+													alt width="300" height="300"
+													class="lazy-load attachment-woocommerce_thumbnail"></a></div>
+									</div>  *@
+								</div>
+
+								<div class="product-info summary col-fit col entry-summary product-summary">
+									<nav class="woocommerce-breadcrumb breadcrumbs uppercase"><a
+											href="/">الرئيسية</a> <span class="divider">&#47;</span>
+										<a href="/category/@model.product.category/">@model.product.category</a> <span
+											class="divider">&#47;</span> <a
+											href="/category/@model.product.category">@model.product.subCategory</a></nav>
+									<h1 class="product-title product_title entry-title">
+										@model.product.name</h1>
+
+									<div class="is-divider small"></div>
+									@* <ul class="next-prev-thumbs is-small show-for-medium">
+										<li class="prod-dropdown has-dropdown">
+											<a href="https://ounce.com.sa/product/pamp-%d8%b3%d8%a8%d9%8a%d9%83%d8%a9-%d8%b0%d9%87%d8%a8-50-%d8%ac%d8%b1%d8%a7%d9%85/"
+												rel="next" class="button icon is-outline circle">
+												<i class="icon-angle-left"></i> </a>
+											<div class="nav-dropdown">
+												<a title="PAMP سبيكة ذهب 50 جرام"
+													href="https://ounce.com.sa/product/pamp-%d8%b3%d8%a8%d9%8a%d9%83%d8%a9-%d8%b0%d9%87%d8%a8-50-%d8%ac%d8%b1%d8%a7%d9%85/">
+													<img width="100" height="100"
+														src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20100%20100%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E"
+														data-src="https://ounce.com.sa/wp-content/uploads/2022/07/Pamp-Suisse-50-gram-Gold-100x100.jpg"
+														class="lazy-load attachment-woocommerce_gallery_thumbnail size-woocommerce_gallery_thumbnail wp-post-image"
+														alt srcset
+														data-srcset="https://ounce.com.sa/wp-content/uploads/2022/07/Pamp-Suisse-50-gram-Gold-100x100.jpg 100w, https://ounce.com.sa/wp-content/uploads/2022/07/Pamp-Suisse-50-gram-Gold-300x300.jpg 300w, https://ounce.com.sa/wp-content/uploads/2022/07/Pamp-Suisse-50-gram-Gold-150x150.jpg 150w, https://ounce.com.sa/wp-content/uploads/2022/07/Pamp-Suisse-50-gram-Gold.jpg 560w"
+														sizes="(max-width: 100px) 100vw, 100px"></a>
+											</div>
+										</li>
+										<li class="prod-dropdown has-dropdown">
+											<a href="https://ounce.com.sa/product/pamp-%d8%b3%d8%a8%d9%8a%d9%83%d8%a9-%d8%b0%d9%87%d8%a8-5-%d8%ac%d8%b1%d8%a7%d9%85/"
+												rel="next" class="button icon is-outline circle">
+												<i class="icon-angle-right"></i> </a>
+											<div class="nav-dropdown">
+												<a title="PAMP سبيكة ذهب 5 جرام"
+													href="https://ounce.com.sa/product/pamp-%d8%b3%d8%a8%d9%8a%d9%83%d8%a9-%d8%b0%d9%87%d8%a8-5-%d8%ac%d8%b1%d8%a7%d9%85/">
+													<img width="100" height="100"
+														src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20100%20100%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E"
+														data-src="https://ounce.com.sa/wp-content/uploads/2021/11/5-FRONT--100x100.jpg"
+														class="lazy-load attachment-woocommerce_gallery_thumbnail size-woocommerce_gallery_thumbnail wp-post-image"
+														alt loading="lazy" srcset
+														data-srcset="https://ounce.com.sa/wp-content/uploads/2021/11/5-FRONT--100x100.jpg 100w, https://ounce.com.sa/wp-content/uploads/2021/11/5-FRONT--300x300.jpg 300w, https://ounce.com.sa/wp-content/uploads/2021/11/5-FRONT--150x150.jpg 150w, https://ounce.com.sa/wp-content/uploads/2021/11/5-FRONT--768x768.jpg 768w, https://ounce.com.sa/wp-content/uploads/2021/11/5-FRONT--600x600.jpg 600w, https://ounce.com.sa/wp-content/uploads/2021/11/5-FRONT-.jpg 900w"
+														sizes="(max-width: 100px) 100vw, 100px"></a>
+											</div>
+										</li>
+									</ul> *@
+									<div class="price-wrapper">
+										<p class="price product-page-price ">
+											<span class="woocommerce-Price-amount amount"><bdi>@model.product.price&nbsp;<span
+														class="woocommerce-Price-currencySymbol">ريال</span></bdi></span>
+										</p>
+									</div>
+									<div class="product-short-description">
+										<p style="text-align: right">@model.product.name</p>
+										<p style="text-align: right">-الوزن:@model.product.weight -العيار: @model.product.caliber</p>
+									</div>
+									@* <p class="stock in-stock">32 متوفر في المخزون</p> *@
+
+
+									<form class="cart"
+										action="/"
+										method="post" enctype="multipart/form-data">
+										<input type="hidden" id="thwepof_product_fields" name="thwepof_product_fields"
+											value>
+										<div class="quantity buttons_added">
+											<input type="button" value="-" class="minus button is-form"> <label
+												class="screen-reader-text" for="quantity_63aae3038909b">@model.product.name
+												</label>
+											<input type="number" id="quantity_63aae3038909b" class="input-text qty text"
+												step="1" min="1" max="32" name="quantity" value="1" title="الكمية"
+												size="4" placeholder inputmode="numeric">
+											<input type="button" value="+" class="plus button is-form">
+										</div>
+
+										<a href="/cart/@model.product.id" name="add-to-cart"  
+											class="single_add_to_cart_button button alt">إضافة للسلة</a>
+
+										 
+									</form>
+
+
+									<div class="product_meta">
+
+
+
+										<span class="posted_in">التصنيف: <a
+												href="/category/@model.product.category"
+												rel="tag">@model.product.description</a></span>
+
+
+									</div>
+									<div class="social-icons share-icons share-row relative"><a
+											href="whatsapp://send?text=PAMP%20%D8%B3%D8%A8%D9%8A%D9%83%D8%A9%20%D8%B0%D9%87%D8%A8%202.5%20%D8%AC%D8%B1%D8%A7%D9%85 - https://ounce.com.sa/product/pamp-%d8%b3%d8%a8%d9%8a%d9%83%d8%a9-%d8%b0%d9%87%d8%a8-2-5-%d8%ac%d8%b1%d8%a7%d9%85/"
+											data-action="share/whatsapp/share"
+											class="icon button circle is-outline tooltip whatsapp show-for-medium"
+											title="ارسل عبر الواتس اب"><i class="icon-whatsapp"></i></a><a
+											href="//www.facebook.com/sharer.php?u=https://ounce.com.sa/product/pamp-%d8%b3%d8%a8%d9%8a%d9%83%d8%a9-%d8%b0%d9%87%d8%a8-2-5-%d8%ac%d8%b1%d8%a7%d9%85/"
+											data-label="Facebook"
+											onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;"
+											rel="noopener noreferrer nofollow" target="_blank"
+											class="icon button circle is-outline tooltip facebook"
+											title="شارك على الفيسبوك"><i class="icon-facebook"></i></a><a
+											href="//twitter.com/share?url=https://ounce.com.sa/product/pamp-%d8%b3%d8%a8%d9%8a%d9%83%d8%a9-%d8%b0%d9%87%d8%a8-2-5-%d8%ac%d8%b1%d8%a7%d9%85/"
+											onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;"
+											rel="noopener noreferrer nofollow" target="_blank"
+											class="icon button circle is-outline tooltip twitter"
+											title="شارك على تويتر"><i class="icon-twitter"></i></a><a
+											href="/cdn-cgi/l/email-protection#6a0f041e0f1813051f182a0b0e0e180f1919020f180f4409050755191f08000f091e573a2b273a4f585a4f2e524f28594f2e524f2b524f2e534f522b4f2e534f52594f2e524f2b534f585a4f2e524f285a4f2e534f525d4f2e524f2b524f585a58445f4f585a4f2e524f2b294f2e524f285b4f2e524f2b5d4f2e534f525f4c0b071a5108050e135729020f09014f585a1e0203194f585a051f1e504f585a021e1e1a19504545051f04090f4409050744190b451a18050e1f091e451a0b071a474f0e524f08594f0e524f0b524f0e534f520b4f0e534f52594f0e524f0b53474f0e524f085a4f0e534f525d4f0e524f0b524758475f474f0e524f0b094f0e524f085b4f0e524f0b5d4f0e534f525f45"
+											rel="nofollow" class="icon button circle is-outline tooltip email"
+											title="Email to a Friend"><i class="icon-envelop"></i></a><a
+											href="//pinterest.com/pin/create/button/?url=https://ounce.com.sa/product/pamp-%d8%b3%d8%a8%d9%8a%d9%83%d8%a9-%d8%b0%d9%87%d8%a8-2-5-%d8%ac%d8%b1%d8%a7%d9%85/&amp;media=@model.product.image&amp;description=PAMP%20%D8%B3%D8%A8%D9%8A%D9%83%D8%A9%20%D8%B0%D9%87%D8%A8%202.5%20%D8%AC%D8%B1%D8%A7%D9%85"
+											onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;"
+											rel="noopener noreferrer nofollow" target="_blank"
+											class="icon button circle is-outline tooltip pinterest"
+											title="Pin on Pinterest"><i class="icon-pinterest"></i></a></div>
+								</div>
+
+
+								<div id="product-sidebar" class="col large-2 hide-for-medium product-sidebar-small">
+									<div class="hide-for-off-canvas" style="width:100%">
+										<ul class="next-prev-thumbs is-small nav-right text-right">
+											<li class="prod-dropdown has-dropdown">
+												<a href="https://ounce.com.sa/product/pamp-%d8%b3%d8%a8%d9%8a%d9%83%d8%a9-%d8%b0%d9%87%d8%a8-50-%d8%ac%d8%b1%d8%a7%d9%85/"
+													rel="next" class="button icon is-outline circle">
+													<i class="icon-angle-left"></i> </a>
+												<div class="nav-dropdown">
+													<a title="PAMP سبيكة ذهب 50 جرام"
+														href="https://ounce.com.sa/product/pamp-%d8%b3%d8%a8%d9%8a%d9%83%d8%a9-%d8%b0%d9%87%d8%a8-50-%d8%ac%d8%b1%d8%a7%d9%85/">
+														<img width="100" height="100"
+															src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20100%20100%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E"
+															data-src="https://ounce.com.sa/wp-content/uploads/2022/07/Pamp-Suisse-50-gram-Gold-100x100.jpg"
+															class="lazy-load attachment-woocommerce_gallery_thumbnail size-woocommerce_gallery_thumbnail wp-post-image"
+															alt loading="lazy" srcset
+															data-srcset="https://ounce.com.sa/wp-content/uploads/2022/07/Pamp-Suisse-50-gram-Gold-100x100.jpg 100w, https://ounce.com.sa/wp-content/uploads/2022/07/Pamp-Suisse-50-gram-Gold-300x300.jpg 300w, https://ounce.com.sa/wp-content/uploads/2022/07/Pamp-Suisse-50-gram-Gold-150x150.jpg 150w, https://ounce.com.sa/wp-content/uploads/2022/07/Pamp-Suisse-50-gram-Gold.jpg 560w"
+															sizes="(max-width: 100px) 100vw, 100px"></a>
+												</div>
+											</li>
+											<li class="prod-dropdown has-dropdown">
+												<a href="https://ounce.com.sa/product/pamp-%d8%b3%d8%a8%d9%8a%d9%83%d8%a9-%d8%b0%d9%87%d8%a8-5-%d8%ac%d8%b1%d8%a7%d9%85/"
+													rel="next" class="button icon is-outline circle">
+													<i class="icon-angle-right"></i> </a>
+												<div class="nav-dropdown">
+													<a title="PAMP سبيكة ذهب 5 جرام"
+														href="https://ounce.com.sa/product/pamp-%d8%b3%d8%a8%d9%8a%d9%83%d8%a9-%d8%b0%d9%87%d8%a8-5-%d8%ac%d8%b1%d8%a7%d9%85/">
+														<img width="100" height="100"
+															src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20100%20100%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E"
+															data-src="https://ounce.com.sa/wp-content/uploads/2021/11/5-FRONT--100x100.jpg"
+															class="lazy-load attachment-woocommerce_gallery_thumbnail size-woocommerce_gallery_thumbnail wp-post-image"
+															alt loading="lazy" srcset
+															data-srcset="https://ounce.com.sa/wp-content/uploads/2021/11/5-FRONT--100x100.jpg 100w, https://ounce.com.sa/wp-content/uploads/2021/11/5-FRONT--300x300.jpg 300w, https://ounce.com.sa/wp-content/uploads/2021/11/5-FRONT--150x150.jpg 150w, https://ounce.com.sa/wp-content/uploads/2021/11/5-FRONT--768x768.jpg 768w, https://ounce.com.sa/wp-content/uploads/2021/11/5-FRONT--600x600.jpg 600w, https://ounce.com.sa/wp-content/uploads/2021/11/5-FRONT-.jpg 900w"
+															sizes="(max-width: 100px) 100vw, 100px"></a>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="product-footer">
+							<div class="container">
+
+								<div class="woocommerce-tabs wc-tabs-wrapper container tabbed-content">
+									<ul class="tabs wc-tabs product-tabs small-nav-collapse nav nav-uppercase nav-line nav-left"
+										role="tablist">
+										<li class="description_tab active" id="tab-title-description" role="tab"
+											aria-controls="tab-description">
+											<a href="#tab-description">
+												الوصف </a>
+										</li>
+										<li class="additional_information_tab " id="tab-title-additional_information"
+											role="tab" aria-controls="tab-additional_information">
+											<a href="#tab-additional_information">
+												معلومات إضافية </a>
+										</li>
+									</ul>
+									<div class="tab-panels">
+										<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--description panel entry-content active"
+											id="tab-description" role="tabpanel"
+											aria-labelledby="tab-title-description">
+
+
+											<p style="direction: rtl">الوزن: @model.product.weight </p>
+											<p style="direction: rtl">العيار: @model.product.caliber</p>
+										</div>
+										<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content "
+											id="tab-additional_information" role="tabpanel"
+											aria-labelledby="tab-title-additional_information">
+
+
+											<table class="woocommerce-product-attributes shop_attributes">
+												<tr
+													class="woocommerce-product-attributes-item woocommerce-product-attributes-item--weight">
+													<th class="woocommerce-product-attributes-item__label">الوزن</th>
+													<td class="woocommerce-product-attributes-item__value">@model.product.weight</td>
+												</tr>
+											</table>
+										</div>
+
+									</div>
+								</div>
+
+
+								<div class="related related-products-wrapper product-section">
+
+									<h3
+										class="product-section-title container-width product-section-title-related pt-half pb-half uppercase">
+										منتجات ذات صلة </h3>
+
+
+
+
+									<div class="row large-columns-4 medium-columns-3 small-columns-2 row-small slider row-slider slider-nav-reveal slider-nav-push"
+										data-flickity-options="{" imagesLoaded": true, "groupCells" : "100%"
+										, "dragThreshold" : 5, "cellAlign" : "left" ,"wrapAround":
+										true,"prevNextButtons": true,"percentPosition": true,"pageDots":
+										false, "rightToLeft" : true, "autoPlay" : false}">
+										@model.category.forEach(function(item){
+											<div
+												class="product-small col has-hover product type-product post-388 status-publish first instock product_cat-36 product_cat-37 has-post-thumbnail purchasable product-type-simple">
+												<div class="col-inner">
+
+													<div class="badge-container absolute left top z-1">
+													</div>
+													<div class="product-small box ">
+														<div class="box-image">
+															<div class="image-fade_in_back">
+																<a
+																	href="/product/@item.id">
+																	<img width="300" height="300"
+																		src="@item.image"
+																		data-src="@item.image"
+																		class="lazy-load attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
+																		alt loading="lazy" srcset
+																		data-srcset="@item.image"
+																		sizes="(max-width: 300px) 100vw, 300px"> </a>
+															</div>
+															<div class="image-tools is-small top right show-on-hover">
+															</div>
+															<div class="image-tools is-small hide-for-small bottom left show-on-hover">
+															</div>
+															<div
+																class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover">
+																<a class="quick-view" data-prod="388" href="#quick-view">معاينة سريعة</a>
+															</div>
+														</div>
+
+														<div class="box-text box-text-products text-center grid-style-2">
+															<div class="title-wrapper">
+																@if(item.cat=="sa" ){
+																		<p class="category uppercase is-smaller no-text-overflow product-cat op-7">
+																	سبائك سعودية </p>
+																}else @if(item.cat=="sw" ){
+																	<p class="category uppercase is-smaller no-text-overflow product-cat op-7">
+																	سبائك سويسرية </p>
+																}else @if(item.cat =="ua"){
+																	<p class="category uppercase is-smaller no-text-overflow product-cat op-7">
+																	سبائك الاتحاد  </p>
+																}else @if(item.category== "coins"){
+																	<p class="category uppercase is-smaller no-text-overflow product-cat op-7">
+																	جنيهات ذهب </p>
+																}else @if(item.category== "framesnecklaces"){
+																	<p class="category uppercase is-smaller no-text-overflow product-cat op-7">
+																	سلاسل وبراويز </p>
+																}else @if(item.category== "braceletnecklace"){
+																	<p class="category uppercase is-smaller no-text-overflow product-cat op-7">
+																	أساور وعقود</p>
+																}
+																<p class="name product-title woocommerce-loop-product__title"><a
+																		href="/product/@item.id">@item.name </a></p>
+																		
+															</div>
+															<div class="price-wrapper">
+																<span class="price"><span
+																		class="woocommerce-Price-amount amount"><bdi>@item.price&nbsp;<span
+																				class="woocommerce-Price-currencySymbol">ريال</span></bdi></span></span>
+															</div><a
+																href="/cart/@item.id"
+																data-quantity="1"
+																class="        add_to_cart_button product_type_simple button primary mb-0 is-outline is-small"
+																data-product_id="388" data-product_sku="100077"
+																aria-label="إضافة &quot;@item.name   .&quot; إلى سلة مشترياتك"
+																rel="nofollow">إضافة إلى السلة</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										})     
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div><!-- shop container -->
+
+		</main>
+        <!-- Root element of PhotoSwipe. Must have class pswp. -->
+	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+		<!-- Background of PhotoSwipe. It's a separate element as animating opacity is faster than rgba(). -->
+		<div class="pswp__bg"></div>
+
+		<!-- Slides wrapper with overflow:hidden. -->
+		<div class="pswp__scroll-wrap">
+
+			<!-- Container that holds slides.
+		PhotoSwipe keeps only 3 of them in the DOM to save memory.
+		Don't modify these 3 pswp__item elements, data is added later on. -->
+			<div class="pswp__container">
+				<div class="pswp__item"></div>
+				<div class="pswp__item"></div>
+				<div class="pswp__item"></div>
+			</div>
+
+			<!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+			<div class="pswp__ui pswp__ui--hidden">
+
+				<div class="pswp__top-bar">
+
+					<!--  Controls are self-explanatory. Order can be changed. -->
+
+					<div class="pswp__counter"></div>
+
+					<button class="pswp__button pswp__button--close" aria-label="إغلاق (Esc)"></button>
+
+					<button class="pswp__button pswp__button--zoom" aria-label="تكبير/تصغير"></button>
+
+					<div class="pswp__preloader">
+						<div class="loading-spin"></div>
+					</div>
+				</div>
+
+				<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+					<div class="pswp__share-tooltip"></div>
+				</div>
+
+				<button class="pswp__button--arrow--left" aria-label="السابق (سهم يسار)"></button>
+
+				<button class="pswp__button--arrow--right" aria-label="التالي (سهم يمين)"></button>
+
+				<div class="pswp__caption">
+					<div class="pswp__caption__center"></div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+	<script type="text/javascript">
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
   })
 })

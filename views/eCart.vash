@@ -1,0 +1,23 @@
+@html.extend('layout', function(model) {
+  @html.block('content', function(model) {
+    <main id="main" class="">
+
+
+	
+<div class="checkout-page-title page-title">
+	<div class="page-title-inner flex-row medium-flex-wrap container">
+	   
+	</div>
+</div>
+<div class="cart-container container page-wrapper page-checkout"><div class="woocommerce"><div class="text-center pt pb">
+	<div class="woocommerce-notices-wrapper"></div><p class="cart-empty woocommerce-info">سلة مشترياتك فارغة حاليًا.</p>		<p class="return-to-shop">
+			<a class="button primary wc-backward" href="/">
+				العودة إلى المتجر			</a>
+		</p>
+	</div></div>
+</div>
+
+
+</main>
+  })
+})

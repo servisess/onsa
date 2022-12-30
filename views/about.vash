@@ -1,0 +1,53 @@
+@html.extend('layout', function(model) {
+@html.block('content', function(model) {
+    <main id="main" class>
+
+
+			<div id="content" role="main" class="content-area">
+
+
+				<div class="row" id="row-985568090">
+
+					<div id="col-890955043" class="col small-12 large-12">
+						<div class="col-inner">
+
+
+							<h3>من نحن</h3>
+							<div>أوْنصَــة علامة تجارية رائدة في بيع وشراء منتجات الذهب بأنواعها من السبائك والجنيهات
+								والمجوهرات عبر فروعنا الموجودة في مدينة الرياض وبخبرة تمتد لأكثر من ٥٠ عاما.</div>
+							<div></div>
+							<div>و رغبة منا في تلبية احتياجات عملائنا و الارتقاء بمستوى الخدمة المقدمة تم اطلاق متجر
+								أونصة الإلكتروني المتخصص في بيع و شراء سبائك و جنيهات الذهب في جميع أنحاء المملكة
+								العربية السعودية.</div>
+							<div></div>
+							<div>أونصة لديها سجل تجاري من وزارة التجارة السعودية برقم 1010637299</div>
+							<div></div>
+							<div>أونصة لديها رخصة أحجار كريمة ومعادن ثمينة من وزارة التجارة السعودية برقم 2684</div>
+							<div></div>
+							<div>أونصة مسجلة في معروف برقم 115062</div>
+							<div></div>
+							<div><a href="https://maroof.sa/115062"><img class="lazy-load wp-image-377 alignright"
+										src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20168%2074%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E"
+										data-src="https://ounce.com.sa/wp-content/uploads/2020/12/ma3rof.png" alt
+										width="168" height="74"></a></div>
+						</div>
+					</div>
+
+
+
+					<style>
+						#row-985568090>.col>.col-inner {
+							padding: 80px 0px 0px 0px;
+						}
+					</style>
+				</div>
+
+
+			</div>
+
+
+
+		</main>
+
+})
+})

